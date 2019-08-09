@@ -17,6 +17,10 @@
     Public dbPatientFilePath As String = Util.getIniString("System", "PatientDir", iniFilePath) & "\Patient.mdb"
     Public DB_Patient As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & dbPatientFilePath
 
+    'Personのデータベースパス
+    Public dbPersonFilePath As String = Util.getIniString("System", "PersonDir", iniFilePath) & "\Person.mdb"
+    Public DB_Person As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & dbPersonFilePath
+
     '各フォーム
     Private patientContactForm As 患者連絡先
     Private staffContactForm As 職員連絡網
@@ -55,6 +59,11 @@
         End If
         If Not System.IO.File.Exists(dbPatientFilePath) Then
             MsgBox("Patientデータベースファイルが存在しません。" & Environment.NewLine & "iniファイルのPatientDirに適切なパスを設定して下さい。")
+            Me.Close()
+            Exit Sub
+        End If
+        If Not System.IO.File.Exists(dbPersonFilePath) Then
+            MsgBox("Personデータベースファイルが存在しません。" & Environment.NewLine & "iniファイルのPersonDirに適切なパスを設定して下さい。")
             Me.Close()
             Exit Sub
         End If

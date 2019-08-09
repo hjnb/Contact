@@ -121,6 +121,9 @@
     <EmbeddedResource Include="患者連絡先.resx">
       <DependentUpon>患者連絡先.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="職員連絡網.resx">
+      <DependentUpon>職員連絡網.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
@@ -141,7 +144,8 @@
       <Lcid>0</Lcid>
       <WrapperTool>primary</WrapperTool>
       <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
     </COMReference>
     <COMReference Include="Microsoft.Office.Core">
       <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
