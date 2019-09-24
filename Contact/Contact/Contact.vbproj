@@ -81,6 +81,12 @@
     <Compile Include="ExDataGridView.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="RenDataGridView.Designer.vb">
+      <DependentUpon>RenDataGridView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RenDataGridView.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="TopForm.vb">
       <SubType>Form</SubType>
     </Compile>

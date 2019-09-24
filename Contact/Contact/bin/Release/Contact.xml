@@ -86,9 +86,23 @@ Contact
  印刷ラジオボタン初期設定
  </summary>
 	<remarks></remarks>
-</member><member name="M:Contact.患者連絡先.btnPrint_Click(System.Object,System.EventArgs)">
+</member><member name="M:Contact.患者連絡先.btnRenPrint_Click(System.Object,System.EventArgs)">
 	<summary>
- 印刷ボタンクリックイベント
+ 利用者連絡先印刷ボタンクリックイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Contact.患者連絡先.btnTaiPrint_Click(System.Object,System.EventArgs)">
+	<summary>
+ 対応別避難先印刷ボタンクリックイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Contact.患者連絡先.btnRegist_Click(System.Object,System.EventArgs)">
+	<summary>
+ 登録ボタンクリックイベント
  </summary>
 	<param name="sender"></param>
 	<param name="e"></param>
