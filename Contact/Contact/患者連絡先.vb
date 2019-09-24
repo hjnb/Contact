@@ -97,9 +97,9 @@ Public Class 患者連絡先
         Dim rs As New ADODB.Recordset
         Dim sql As String = ""
         If type = "All" Then
-            sql = "select P.*, C.Sonota, C.Tai, C.Hinan, C.Ido, C.Tanto, C.Biko from (select Cod, Nam, Kana, Int((Format(NOW(),'YYYYMMDD')-Format(Birth, 'YYYYMMDD'))/10000) as Age, Jyu1, KNam, Zok, Tel2, Jyu2 from UsrM where Sanato = 1 or Nurse = 1 order by Kana) as P left join [" & TopForm.dbFilePath & "].PInfo as C on P.Cod = C.Cod"
+            sql = "select P.*, C.Sonota, C.Tai, C.Hinan, C.Ido, C.Tanto, C.Biko from (select Cod, Nam, Kana, Int((Format(NOW(),'YYYYMMDD')-Format(Birth, 'YYYYMMDD'))/10000) as Age, Jyu1, KNam, Zok, Tel2, Jyu2 from UsrM where Sanato = 1 or Nurse = 1 order by Kana) as P left join [" & TopForm.dbFilePath & "].PInfo as C on P.Cod = C.Cod order by P.Kana"
         Else
-            sql = "select P.*, C.Sonota, C.Tai, C.Hinan, C.Ido, C.Tanto, C.Biko from (select Cod, Nam, Kana, Int((Format(NOW(),'YYYYMMDD')-Format(Birth, 'YYYYMMDD'))/10000) as Age, Jyu1, KNam, Zok, Tel2, Jyu2 from UsrM where " & type & " = 1 order by Kana) as P left join [" & TopForm.dbFilePath & "].PInfo as C on P.Cod = C.Cod"
+            sql = "select P.*, C.Sonota, C.Tai, C.Hinan, C.Ido, C.Tanto, C.Biko from (select Cod, Nam, Kana, Int((Format(NOW(),'YYYYMMDD')-Format(Birth, 'YYYYMMDD'))/10000) as Age, Jyu1, KNam, Zok, Tel2, Jyu2 from UsrM where " & type & " = 1 order by Kana) as P left join [" & TopForm.dbFilePath & "].PInfo as C on P.Cod = C.Cod order by P.Kana"
         End If
 
         rs.Open(sql, cnn, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockReadOnly)
