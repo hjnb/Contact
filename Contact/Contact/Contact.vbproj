@@ -61,6 +61,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="ymdBox">
+      <HintPath>\\primergytx100s1\Hakojun\事務\さかもと\Visual Studio 2010\Projects\ymdBox\ymdBox\ymdBox\bin\Release\ymdBox.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -122,6 +125,12 @@
     <Compile Include="職員連絡網.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="職員連絡網改.Designer.vb">
+      <DependentUpon>職員連絡網改.vb</DependentUpon>
+    </Compile>
+    <Compile Include="職員連絡網改.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -138,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="職員連絡網.resx">
       <DependentUpon>職員連絡網.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="職員連絡網改.resx">
+      <DependentUpon>職員連絡網改.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
