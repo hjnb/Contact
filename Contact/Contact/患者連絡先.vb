@@ -202,7 +202,7 @@ Public Class 患者連絡先
             End With
             With .Columns("Ido")
                 .HeaderText = "移動手段"
-                .DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
+                .DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
                 .DefaultCellStyle.BackColor = Color.White
                 .SortMode = DataGridViewColumnSortMode.NotSortable
                 .Width = 120
@@ -547,5 +547,22 @@ Public Class 患者連絡先
         '再表示
         Dim type As String = If(rbtnI.Checked, "Nurse", If(rbtnR.Checked, "Sanato", "All"))
         displayDgvPatientContact(type)
+    End Sub
+
+    Private Sub dgvPatientContact_EditingControlShowing(sender As Object, e As System.Windows.Forms.DataGridViewEditingControlShowingEventArgs) Handles dgvPatientContact.EditingControlShowing
+        If TypeOf e.Control Is DataGridViewTextBoxEditingControl Then
+            Dim dgv As DataGridView = DirectCast(sender, DataGridView)
+
+            '選択行index
+            Dim selectedRowIndex As Integer = dgv.CurrentCell.RowIndex
+            '選択列index
+            Dim selectedColumnIndex As Integer = dgv.CurrentCell.ColumnIndex
+
+            Dim tb As DataGridViewTextBoxEditingControl = DirectCast(e.Control, DataGridViewTextBoxEditingControl)
+            tb.ImeMode = Windows.Forms.ImeMode.Hiragana
+            If selectedColumnIndex = 12 Then '移動手段列
+                tb.ImeMode = Windows.Forms.ImeMode.Disable
+            End If
+        End If
     End Sub
 End Class
