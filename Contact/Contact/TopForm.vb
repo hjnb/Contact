@@ -23,7 +23,7 @@
 
     '各フォーム
     Private patientContactForm As 患者連絡先
-    Private staffContactForm As 職員連絡網改
+    Private staffContactForm As 職員連絡網改2
 
     ''' <summary>
     ''' コンストラクタ
@@ -97,7 +97,7 @@
     ''' <remarks></remarks>
     Private Sub btnStaffContact_Click(sender As System.Object, e As System.EventArgs) Handles btnStaffContact.Click
         If IsNothing(staffContactForm) OrElse staffContactForm.IsDisposed Then
-            staffContactForm = New 職員連絡網改()
+            staffContactForm = New 職員連絡網改2()
             staffContactForm.Owner = Me
             staffContactForm.Show()
         End If

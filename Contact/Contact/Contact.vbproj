@@ -131,6 +131,12 @@
     <Compile Include="職員連絡網改.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="職員連絡網改2.Designer.vb">
+      <DependentUpon>職員連絡網改2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="職員連絡網改2.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="職員連絡網改.resx">
       <DependentUpon>職員連絡網改.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="職員連絡網改2.resx">
+      <DependentUpon>職員連絡網改2.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
