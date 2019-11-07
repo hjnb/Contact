@@ -115,6 +115,26 @@ Public Class 職員連絡網改2
             dgv("Info", 3).Value = ""
         Next
         clearSelection()
+
+        'チェックボックスのチェックはずす
+        chkLLA3.Checked = False
+        chkLeftA3.Checked = False
+        chkDownA3.Checked = False
+        chkRightA3.Checked = False
+        chkRRA3.Checked = False
+        '
+        For Each str As String In {"B", "C", "D", "E", "F"}
+            For i As Integer = 1 To 5
+                If str <> "B" Then
+                    DirectCast(dgvPanel.Controls("chkLeft" & str & i), CheckBox).Checked = False
+                End If
+                DirectCast(dgvPanel.Controls("chkDown" & str & i), CheckBox).Checked = False
+                If str <> "F" Then
+                    DirectCast(dgvPanel.Controls("chkRight" & str & i), CheckBox).Checked = False
+                End If
+            Next
+        Next
+
     End Sub
 
     ''' <summary>
@@ -275,7 +295,7 @@ Public Class 職員連絡網改2
         Dim cnn As New ADODB.Connection
         cnn.Open(TopForm.DB_Contact)
         Dim rs As New ADODB.Recordset
-        Dim sql As String = "select Area, Nam, Tel1, Tel2, Syo from Contact where Floor = 'All' or Floor = '" & target & "' order by Area"
+        Dim sql As String = "select * from Contact where Floor = 'All' or Floor = '" & target & "' order by Area"
         rs.Open(sql, cnn, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockReadOnly)
         While Not rs.EOF
             '場所名
@@ -286,7 +306,7 @@ Public Class 職員連絡網改2
             If area = "A1" OrElse area = "A2" OrElse area = "A3" Then
                 dgv = DirectCast(Controls("dgvContact" & area), DataGridView)
             Else
-                dgv = DirectCast(Panel3.Controls("dgvContact" & area), DataGridView)
+                dgv = DirectCast(dgvPanel.Controls("dgvContact" & area), DataGridView)
             End If
 
             'データ表示
@@ -294,6 +314,38 @@ Public Class 職員連絡網改2
             dgv("Info", 1).Value = Util.checkDBNullValue(rs.Fields("Nam").Value) '氏名
             dgv("Info", 2).Value = Util.checkDBNullValue(rs.Fields("Tel1").Value) '電話番号1
             dgv("Info", 3).Value = Util.checkDBNullValue(rs.Fields("Tel2").Value) '電話番号2
+
+            'チェックボックス
+            Dim ll As Integer = rs.Fields("LL").Value
+            Dim left As Integer = rs.Fields("Left").Value
+            Dim down As Integer = rs.Fields("Down").Value
+            Dim right As Integer = rs.Fields("Right").Value
+            Dim rr As Integer = rs.Fields("RR").Value
+            If area.Substring(0, 1) = "A" Then
+                If area.Substring(1, 1) = "3" Then
+                    chkLLA3.Checked = If(ll = 1, True, False)
+                    chkLeftA3.Checked = If(left = 1, True, False)
+                    chkDownA3.Checked = If(down = 1, True, False)
+                    chkRightA3.Checked = If(right = 1, True, False)
+                    chkRRA3.Checked = If(rr = 1, True, False)
+                End If
+            ElseIf area.Substring(0, 1) = "B" Then
+                If area.Substring(1, 1) <> "6" Then
+                    DirectCast(dgvPanel.Controls("chkDown" & area), CheckBox).Checked = If(down = 1, True, False)
+                    DirectCast(dgvPanel.Controls("chkRight" & area), CheckBox).Checked = If(right = 1, True, False)
+                End If
+            ElseIf area.Substring(0, 1) = "F" Then
+                If area.Substring(1, 1) <> "6" Then
+                    DirectCast(dgvPanel.Controls("chkDown" & area), CheckBox).Checked = If(down = 1, True, False)
+                    DirectCast(dgvPanel.Controls("chkLeft" & area), CheckBox).Checked = If(left = 1, True, False)
+                End If
+            Else
+                If area.Substring(1, 1) <> "6" Then
+                    DirectCast(dgvPanel.Controls("chkLeft" & area), CheckBox).Checked = If(left = 1, True, False)
+                    DirectCast(dgvPanel.Controls("chkDown" & area), CheckBox).Checked = If(down = 1, True, False)
+                    DirectCast(dgvPanel.Controls("chkRight" & area), CheckBox).Checked = If(right = 1, True, False)
+                End If
+            End If
 
             rs.MoveNext()
         End While
@@ -420,51 +472,86 @@ Public Class 職員連絡網改2
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     ''' <remarks></remarks>
-    'Private Sub btnRegist_Click(sender As System.Object, e As System.EventArgs) Handles btnRegist.Click
-    '    '登録確認
-    '    Dim result As DialogResult = MessageBox.Show("現在の内容で登録してよろしいですか？", "登録", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
-    '    If result = Windows.Forms.DialogResult.Yes Then
-    '        '対象のデータ
-    '        Dim target As String = If(rbtn1F.Checked, "1F", If(rbtn2I.Checked, "2I", "2R"))
+    Private Sub btnRegist_Click(sender As System.Object, e As System.EventArgs) Handles btnRegist.Click
+        '登録確認
+        Dim result As DialogResult = MessageBox.Show("現在の内容で登録してよろしいですか？", "登録", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If result = Windows.Forms.DialogResult.Yes Then
+            '対象のデータ
+            Dim target As String = If(rbtn1F.Checked, "1F", If(rbtn2I.Checked, "2I", "2R"))
 
-    '        Dim cnn As New ADODB.Connection
-    '        cnn.Open(TopForm.DB_Contact)
+            Dim cnn As New ADODB.Connection
+            cnn.Open(TopForm.DB_Contact)
 
-    '        '削除
-    '        Dim cmd As New ADODB.Command()
-    '        cmd.ActiveConnection = cnn
-    '        cmd.CommandText = "delete from Contact where Floor = 'All' or Floor = '" & target & "'"
-    '        cmd.Execute()
+            '削除
+            Dim cmd As New ADODB.Command()
+            cmd.ActiveConnection = cnn
+            cmd.CommandText = "delete from Contact where Floor = 'All' or Floor = '" & target & "'"
+            cmd.Execute()
 
-    '        '登録
-    '        Dim rs As New ADODB.Recordset
-    '        rs.Open("Contact", cnn, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockOptimistic)
-    '        For Each dgv As DataGridView In dgvArray
-    '            Dim area As String = dgv.Name.Substring(dgv.Name.Length - 2, 2)
-    '            Dim syo As String = Util.checkDBNullValue(dgv("Info", 0).Value)
-    '            Dim nam As String = Util.checkDBNullValue(dgv("Info", 1).Value)
-    '            Dim tel1 As String = Util.checkDBNullValue(dgv("Info", 2).Value)
-    '            Dim tel2 As String = Util.checkDBNullValue(dgv("Info", 3).Value)
+            '登録
+            Dim rs As New ADODB.Recordset
+            rs.Open("Contact", cnn, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockOptimistic)
+            For Each dgv As DataGridView In dgvArray
+                Dim area As String = dgv.Name.Substring(dgv.Name.Length - 2, 2)
+                Dim syo As String = Util.checkDBNullValue(dgv("Info", 0).Value)
+                Dim nam As String = Util.checkDBNullValue(dgv("Info", 1).Value)
+                Dim tel1 As String = Util.checkDBNullValue(dgv("Info", 2).Value)
+                Dim tel2 As String = Util.checkDBNullValue(dgv("Info", 3).Value)
 
-    '            rs.AddNew()
-    '            If area = "A1" OrElse area = "A2" Then
-    '                rs.Fields("Floor").Value = "All"
-    '            Else
-    '                rs.Fields("Floor").Value = target
-    '            End If
-    '            rs.Fields("Area").Value = area
-    '            rs.Fields("Nam").Value = nam
-    '            rs.Fields("Tel1").Value = tel1
-    '            rs.Fields("Tel2").Value = tel2
-    '            rs.Fields("Syo").Value = syo
-    '        Next
-    '        rs.Update()
-    '        rs.Close()
-    '        cnn.Close()
+                rs.AddNew()
+                If area = "A1" OrElse area = "A2" Then
+                    rs.Fields("Floor").Value = "All"
+                Else
+                    rs.Fields("Floor").Value = target
+                End If
+                rs.Fields("Area").Value = area
+                rs.Fields("Nam").Value = nam
+                rs.Fields("Tel1").Value = tel1
+                rs.Fields("Tel2").Value = tel2
+                rs.Fields("Syo").Value = syo
+                '矢印情報
+                If area = "A1" OrElse area = "A2" OrElse area.Substring(1, 1) = "6" Then
+                    '上２つと最下段：矢印情報無し
+                    rs.Fields("LL").Value = 0
+                    rs.Fields("Left").Value = 0
+                    rs.Fields("Down").Value = 0
+                    rs.Fields("Right").Value = 0
+                    rs.Fields("RR").Value = 0
+                ElseIf area = "A3" Then
+                    '3段目の１つ：矢印5個
+                    rs.Fields("LL").Value = If(chkLLA3.Checked, 1, 0)
+                    rs.Fields("Left").Value = If(chkLeftA3.Checked, 1, 0)
+                    rs.Fields("Down").Value = If(chkDownA3.Checked, 1, 0)
+                    rs.Fields("Right").Value = If(chkRightA3.Checked, 1, 0)
+                    rs.Fields("RR").Value = If(chkLLA3.Checked, 1, 0)
+                Else
+                    '上記以外:左下、下、右下の矢印3個
+                    'LL、RRの矢印はないので0
+                    rs.Fields("LL").Value = 0
+                    rs.Fields("RR").Value = 0
+                    '左下
+                    If area.Substring(0, 1) = "B" Then
+                        rs.Fields("Left").Value = 0
+                    Else
+                        rs.Fields("Left").Value = If(DirectCast(dgvPanel.Controls("chkLeft" & area), CheckBox).Checked, 1, 0)
+                    End If
+                    '下
+                    rs.Fields("Down").Value = If(DirectCast(dgvPanel.Controls("chkDown" & area), CheckBox).Checked, 1, 0)
+                    '右下
+                    If area.Substring(0, 1) = "F" Then
+                        rs.Fields("Right").Value = 0
+                    Else
+                        rs.Fields("Right").Value = If(DirectCast(dgvPanel.Controls("chkRight" & area), CheckBox).Checked, 1, 0)
+                    End If
+                End If
+            Next
+            rs.Update()
+            rs.Close()
+            cnn.Close()
 
-    '        clearSelection()
-    '    End If
-    'End Sub
+            clearSelection()
+        End If
+    End Sub
 
     ''' <summary>
     ''' 印刷ボタンクリックイベント

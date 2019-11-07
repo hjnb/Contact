@@ -379,6 +379,13 @@ Contact
 	<param name="sender"></param>
 	<param name="e"></param>
 	<remarks></remarks>
+</member><member name="M:Contact.職員連絡網改2.btnRegist_Click(System.Object,System.EventArgs)">
+	<summary>
+ 登録ボタンクリックイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
 </member><member name="M:Contact.職員連絡網改2.chkPrintDate_CheckedChanged(System.Object,System.EventArgs)">
 	<summary>
  印刷日チェック

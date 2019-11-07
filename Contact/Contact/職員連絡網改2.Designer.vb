@@ -25,95 +25,72 @@ Partial Class 職員連絡網改2
         Me.components = New System.ComponentModel.Container()
         Me.chkPrintDate = New System.Windows.Forms.CheckBox()
         Me.printYmdBox = New ymdBox.ymdBox()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.CheckBox62 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox63 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox64 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox65 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox66 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox67 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox68 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox69 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox70 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox71 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox72 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox73 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox74 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox49 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox50 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox51 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox52 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox53 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox54 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox55 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox56 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox57 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox58 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox59 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox60 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox61 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox34 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox35 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox37 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox38 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox40 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox41 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox42 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox43 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox44 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox45 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox46 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox47 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox48 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox21 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox22 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox23 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox24 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox25 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox26 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox27 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox28 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox29 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox30 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox31 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox32 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox33 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox19 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox20 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox17 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox18 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox14 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox15 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox16 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox39 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox11 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox36 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox12 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox13 = New System.Windows.Forms.CheckBox()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.rbtn2R = New System.Windows.Forms.RadioButton()
-        Me.rbtn2I = New System.Windows.Forms.RadioButton()
-        Me.rbtn1F = New System.Windows.Forms.RadioButton()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.rbtnPrintout = New System.Windows.Forms.RadioButton()
-        Me.rbtnPreview = New System.Windows.Forms.RadioButton()
-        Me.btnInputClear = New System.Windows.Forms.Button()
-        Me.btnPrint = New System.Windows.Forms.Button()
-        Me.btnRegist = New System.Windows.Forms.Button()
-        Me.btnClearSelect = New System.Windows.Forms.Button()
-        Me.dgvStaff = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox9 = New System.Windows.Forms.CheckBox()
+        Me.dgvPanel = New System.Windows.Forms.Panel()
+        Me.chkRightB5 = New System.Windows.Forms.CheckBox()
+        Me.chkDownB5 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftF5 = New System.Windows.Forms.CheckBox()
+        Me.chkDownF5 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftE5 = New System.Windows.Forms.CheckBox()
+        Me.chkRightE5 = New System.Windows.Forms.CheckBox()
+        Me.chkDownE5 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftD5 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftC5 = New System.Windows.Forms.CheckBox()
+        Me.chkRightD5 = New System.Windows.Forms.CheckBox()
+        Me.chkRightC5 = New System.Windows.Forms.CheckBox()
+        Me.chkDownD5 = New System.Windows.Forms.CheckBox()
+        Me.chkDownC5 = New System.Windows.Forms.CheckBox()
+        Me.chkRightB4 = New System.Windows.Forms.CheckBox()
+        Me.chkDownB4 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftF4 = New System.Windows.Forms.CheckBox()
+        Me.chkDownF4 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftE4 = New System.Windows.Forms.CheckBox()
+        Me.chkRightE4 = New System.Windows.Forms.CheckBox()
+        Me.chkDownE4 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftD4 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftC4 = New System.Windows.Forms.CheckBox()
+        Me.chkRightD4 = New System.Windows.Forms.CheckBox()
+        Me.chkRightC4 = New System.Windows.Forms.CheckBox()
+        Me.chkDownD4 = New System.Windows.Forms.CheckBox()
+        Me.chkDownC4 = New System.Windows.Forms.CheckBox()
+        Me.chkRightB3 = New System.Windows.Forms.CheckBox()
+        Me.chkDownB3 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftF3 = New System.Windows.Forms.CheckBox()
+        Me.chkDownF3 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftE3 = New System.Windows.Forms.CheckBox()
+        Me.chkRightE3 = New System.Windows.Forms.CheckBox()
+        Me.chkDownE3 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftD3 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftC3 = New System.Windows.Forms.CheckBox()
+        Me.chkRightD3 = New System.Windows.Forms.CheckBox()
+        Me.chkRightC3 = New System.Windows.Forms.CheckBox()
+        Me.chkDownD3 = New System.Windows.Forms.CheckBox()
+        Me.chkDownC3 = New System.Windows.Forms.CheckBox()
+        Me.chkRightB2 = New System.Windows.Forms.CheckBox()
+        Me.chkDownB2 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftF2 = New System.Windows.Forms.CheckBox()
+        Me.chkDownF2 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftE2 = New System.Windows.Forms.CheckBox()
+        Me.chkRightE2 = New System.Windows.Forms.CheckBox()
+        Me.chkDownE2 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftD2 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftC2 = New System.Windows.Forms.CheckBox()
+        Me.chkRightD2 = New System.Windows.Forms.CheckBox()
+        Me.chkRightC2 = New System.Windows.Forms.CheckBox()
+        Me.chkDownD2 = New System.Windows.Forms.CheckBox()
+        Me.chkDownC2 = New System.Windows.Forms.CheckBox()
+        Me.chkRightB1 = New System.Windows.Forms.CheckBox()
+        Me.chkDownB1 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftF1 = New System.Windows.Forms.CheckBox()
+        Me.chkDownF1 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftE1 = New System.Windows.Forms.CheckBox()
+        Me.chkRightE1 = New System.Windows.Forms.CheckBox()
+        Me.chkDownE1 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftD1 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftC1 = New System.Windows.Forms.CheckBox()
+        Me.chkRightD1 = New System.Windows.Forms.CheckBox()
+        Me.chkRightC1 = New System.Windows.Forms.CheckBox()
+        Me.chkDownD1 = New System.Windows.Forms.CheckBox()
+        Me.chkDownC1 = New System.Windows.Forms.CheckBox()
         Me.dgvContactF6 = New Contact.ExDataGridView(Me.components)
         Me.dgvContactB6 = New Contact.ExDataGridView(Me.components)
         Me.dgvContactF1 = New Contact.ExDataGridView(Me.components)
@@ -144,17 +121,37 @@ Partial Class 職員連絡網改2
         Me.dgvContactD2 = New Contact.ExDataGridView(Me.components)
         Me.dgvContactD4 = New Contact.ExDataGridView(Me.components)
         Me.dgvContactD3 = New Contact.ExDataGridView(Me.components)
-        Me.dgvContactA3 = New Contact.ExDataGridView(Me.components)
-        Me.dgvContactA2 = New Contact.ExDataGridView(Me.components)
-        Me.dgvContactA1 = New Contact.ExDataGridView(Me.components)
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.rbtn2R = New System.Windows.Forms.RadioButton()
+        Me.rbtn2I = New System.Windows.Forms.RadioButton()
+        Me.rbtn1F = New System.Windows.Forms.RadioButton()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.rbtnPrintout = New System.Windows.Forms.RadioButton()
+        Me.rbtnPreview = New System.Windows.Forms.RadioButton()
+        Me.btnInputClear = New System.Windows.Forms.Button()
+        Me.btnPrint = New System.Windows.Forms.Button()
+        Me.btnRegist = New System.Windows.Forms.Button()
+        Me.btnClearSelect = New System.Windows.Forms.Button()
+        Me.dgvStaff = New System.Windows.Forms.DataGridView()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.chkLLA3 = New System.Windows.Forms.CheckBox()
+        Me.chkLeftA3 = New System.Windows.Forms.CheckBox()
+        Me.chkDownA3 = New System.Windows.Forms.CheckBox()
+        Me.chkRightA3 = New System.Windows.Forms.CheckBox()
+        Me.chkRRA3 = New System.Windows.Forms.CheckBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.Panel3.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        CType(Me.dgvStaff, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.dgvContactA3 = New Contact.ExDataGridView(Me.components)
+        Me.dgvContactA2 = New Contact.ExDataGridView(Me.components)
+        Me.dgvContactA1 = New Contact.ExDataGridView(Me.components)
+        Me.dgvPanel.SuspendLayout()
         CType(Me.dgvContactF6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvContactB6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvContactF1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -185,6 +182,9 @@ Partial Class 職員連絡網改2
         CType(Me.dgvContactD2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvContactD4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvContactD3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        CType(Me.dgvStaff, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvContactA3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvContactA2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvContactA1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -214,984 +214,758 @@ Partial Class 職員連絡網改2
         Me.printYmdBox.TabIndex = 101
         Me.printYmdBox.textReadOnly = False
         '
-        'Panel3
-        '
-        Me.Panel3.AutoScroll = True
-        Me.Panel3.Controls.Add(Me.CheckBox62)
-        Me.Panel3.Controls.Add(Me.CheckBox63)
-        Me.Panel3.Controls.Add(Me.CheckBox64)
-        Me.Panel3.Controls.Add(Me.CheckBox65)
-        Me.Panel3.Controls.Add(Me.CheckBox66)
-        Me.Panel3.Controls.Add(Me.CheckBox67)
-        Me.Panel3.Controls.Add(Me.CheckBox68)
-        Me.Panel3.Controls.Add(Me.CheckBox69)
-        Me.Panel3.Controls.Add(Me.CheckBox70)
-        Me.Panel3.Controls.Add(Me.CheckBox71)
-        Me.Panel3.Controls.Add(Me.CheckBox72)
-        Me.Panel3.Controls.Add(Me.CheckBox73)
-        Me.Panel3.Controls.Add(Me.CheckBox74)
-        Me.Panel3.Controls.Add(Me.CheckBox49)
-        Me.Panel3.Controls.Add(Me.CheckBox50)
-        Me.Panel3.Controls.Add(Me.CheckBox51)
-        Me.Panel3.Controls.Add(Me.CheckBox52)
-        Me.Panel3.Controls.Add(Me.CheckBox53)
-        Me.Panel3.Controls.Add(Me.CheckBox54)
-        Me.Panel3.Controls.Add(Me.CheckBox55)
-        Me.Panel3.Controls.Add(Me.CheckBox56)
-        Me.Panel3.Controls.Add(Me.CheckBox57)
-        Me.Panel3.Controls.Add(Me.CheckBox58)
-        Me.Panel3.Controls.Add(Me.CheckBox59)
-        Me.Panel3.Controls.Add(Me.CheckBox60)
-        Me.Panel3.Controls.Add(Me.CheckBox61)
-        Me.Panel3.Controls.Add(Me.CheckBox34)
-        Me.Panel3.Controls.Add(Me.CheckBox35)
-        Me.Panel3.Controls.Add(Me.CheckBox37)
-        Me.Panel3.Controls.Add(Me.CheckBox38)
-        Me.Panel3.Controls.Add(Me.CheckBox40)
-        Me.Panel3.Controls.Add(Me.CheckBox41)
-        Me.Panel3.Controls.Add(Me.CheckBox42)
-        Me.Panel3.Controls.Add(Me.CheckBox43)
-        Me.Panel3.Controls.Add(Me.CheckBox44)
-        Me.Panel3.Controls.Add(Me.CheckBox45)
-        Me.Panel3.Controls.Add(Me.CheckBox46)
-        Me.Panel3.Controls.Add(Me.CheckBox47)
-        Me.Panel3.Controls.Add(Me.CheckBox48)
-        Me.Panel3.Controls.Add(Me.CheckBox21)
-        Me.Panel3.Controls.Add(Me.CheckBox22)
-        Me.Panel3.Controls.Add(Me.CheckBox23)
-        Me.Panel3.Controls.Add(Me.CheckBox24)
-        Me.Panel3.Controls.Add(Me.CheckBox25)
-        Me.Panel3.Controls.Add(Me.CheckBox26)
-        Me.Panel3.Controls.Add(Me.CheckBox27)
-        Me.Panel3.Controls.Add(Me.CheckBox28)
-        Me.Panel3.Controls.Add(Me.CheckBox29)
-        Me.Panel3.Controls.Add(Me.CheckBox30)
-        Me.Panel3.Controls.Add(Me.CheckBox31)
-        Me.Panel3.Controls.Add(Me.CheckBox32)
-        Me.Panel3.Controls.Add(Me.CheckBox33)
-        Me.Panel3.Controls.Add(Me.CheckBox19)
-        Me.Panel3.Controls.Add(Me.CheckBox20)
-        Me.Panel3.Controls.Add(Me.CheckBox17)
-        Me.Panel3.Controls.Add(Me.CheckBox18)
-        Me.Panel3.Controls.Add(Me.CheckBox14)
-        Me.Panel3.Controls.Add(Me.CheckBox15)
-        Me.Panel3.Controls.Add(Me.CheckBox16)
-        Me.Panel3.Controls.Add(Me.CheckBox10)
-        Me.Panel3.Controls.Add(Me.CheckBox39)
-        Me.Panel3.Controls.Add(Me.CheckBox11)
-        Me.Panel3.Controls.Add(Me.CheckBox36)
-        Me.Panel3.Controls.Add(Me.CheckBox12)
-        Me.Panel3.Controls.Add(Me.CheckBox13)
-        Me.Panel3.Controls.Add(Me.dgvContactF6)
-        Me.Panel3.Controls.Add(Me.dgvContactB6)
-        Me.Panel3.Controls.Add(Me.dgvContactF1)
-        Me.Panel3.Controls.Add(Me.dgvContactE6)
-        Me.Panel3.Controls.Add(Me.dgvContactB1)
-        Me.Panel3.Controls.Add(Me.dgvContactC6)
-        Me.Panel3.Controls.Add(Me.dgvContactF5)
-        Me.Panel3.Controls.Add(Me.dgvContactD6)
-        Me.Panel3.Controls.Add(Me.dgvContactB2)
-        Me.Panel3.Controls.Add(Me.dgvContactF4)
-        Me.Panel3.Controls.Add(Me.dgvContactB3)
-        Me.Panel3.Controls.Add(Me.dgvContactF3)
-        Me.Panel3.Controls.Add(Me.dgvContactB4)
-        Me.Panel3.Controls.Add(Me.dgvContactF2)
-        Me.Panel3.Controls.Add(Me.dgvContactB5)
-        Me.Panel3.Controls.Add(Me.dgvContactC1)
-        Me.Panel3.Controls.Add(Me.dgvContactE5)
-        Me.Panel3.Controls.Add(Me.dgvContactC2)
-        Me.Panel3.Controls.Add(Me.dgvContactE4)
-        Me.Panel3.Controls.Add(Me.dgvContactC3)
-        Me.Panel3.Controls.Add(Me.dgvContactE3)
-        Me.Panel3.Controls.Add(Me.dgvContactC4)
-        Me.Panel3.Controls.Add(Me.dgvContactE2)
-        Me.Panel3.Controls.Add(Me.dgvContactC5)
-        Me.Panel3.Controls.Add(Me.dgvContactE1)
-        Me.Panel3.Controls.Add(Me.dgvContactD1)
-        Me.Panel3.Controls.Add(Me.dgvContactD5)
-        Me.Panel3.Controls.Add(Me.dgvContactD2)
-        Me.Panel3.Controls.Add(Me.dgvContactD4)
-        Me.Panel3.Controls.Add(Me.dgvContactD3)
-        Me.Panel3.Location = New System.Drawing.Point(148, 405)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(823, 570)
-        Me.Panel3.TabIndex = 100
-        '
-        'CheckBox62
-        '
-        Me.CheckBox62.AutoSize = True
-        Me.CheckBox62.Location = New System.Drawing.Point(125, 636)
-        Me.CheckBox62.Name = "CheckBox62"
-        Me.CheckBox62.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox62.TabIndex = 177
-        Me.CheckBox62.Text = "↘"
-        Me.CheckBox62.UseVisualStyleBackColor = True
-        '
-        'CheckBox63
-        '
-        Me.CheckBox63.AutoSize = True
-        Me.CheckBox63.Location = New System.Drawing.Point(74, 637)
-        Me.CheckBox63.Name = "CheckBox63"
-        Me.CheckBox63.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox63.TabIndex = 176
-        Me.CheckBox63.Text = "↓"
-        Me.CheckBox63.UseVisualStyleBackColor = True
-        '
-        'CheckBox64
-        '
-        Me.CheckBox64.AutoSize = True
-        Me.CheckBox64.Location = New System.Drawing.Point(657, 637)
-        Me.CheckBox64.Name = "CheckBox64"
-        Me.CheckBox64.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox64.TabIndex = 175
-        Me.CheckBox64.Text = "↙"
-        Me.CheckBox64.UseVisualStyleBackColor = True
-        '
-        'CheckBox65
-        '
-        Me.CheckBox65.AutoSize = True
-        Me.CheckBox65.Location = New System.Drawing.Point(707, 638)
-        Me.CheckBox65.Name = "CheckBox65"
-        Me.CheckBox65.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox65.TabIndex = 174
-        Me.CheckBox65.Text = "↓"
-        Me.CheckBox65.UseVisualStyleBackColor = True
-        '
-        'CheckBox66
-        '
-        Me.CheckBox66.AutoSize = True
-        Me.CheckBox66.Location = New System.Drawing.Point(499, 637)
-        Me.CheckBox66.Name = "CheckBox66"
-        Me.CheckBox66.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox66.TabIndex = 173
-        Me.CheckBox66.Text = "↙"
-        Me.CheckBox66.UseVisualStyleBackColor = True
-        '
-        'CheckBox67
-        '
-        Me.CheckBox67.AutoSize = True
-        Me.CheckBox67.Location = New System.Drawing.Point(600, 637)
-        Me.CheckBox67.Name = "CheckBox67"
-        Me.CheckBox67.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox67.TabIndex = 172
-        Me.CheckBox67.Text = "↘"
-        Me.CheckBox67.UseVisualStyleBackColor = True
-        '
-        'CheckBox68
-        '
-        Me.CheckBox68.AutoSize = True
-        Me.CheckBox68.Location = New System.Drawing.Point(549, 638)
-        Me.CheckBox68.Name = "CheckBox68"
-        Me.CheckBox68.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox68.TabIndex = 171
-        Me.CheckBox68.Text = "↓"
-        Me.CheckBox68.UseVisualStyleBackColor = True
-        '
-        'CheckBox69
-        '
-        Me.CheckBox69.AutoSize = True
-        Me.CheckBox69.Location = New System.Drawing.Point(342, 637)
-        Me.CheckBox69.Name = "CheckBox69"
-        Me.CheckBox69.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox69.TabIndex = 170
-        Me.CheckBox69.Text = "↙"
-        Me.CheckBox69.UseVisualStyleBackColor = True
-        '
-        'CheckBox70
-        '
-        Me.CheckBox70.AutoSize = True
-        Me.CheckBox70.Location = New System.Drawing.Point(184, 637)
-        Me.CheckBox70.Name = "CheckBox70"
-        Me.CheckBox70.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox70.TabIndex = 167
-        Me.CheckBox70.Text = "↙"
-        Me.CheckBox70.UseVisualStyleBackColor = True
-        '
-        'CheckBox71
-        '
-        Me.CheckBox71.AutoSize = True
-        Me.CheckBox71.Location = New System.Drawing.Point(443, 637)
-        Me.CheckBox71.Name = "CheckBox71"
-        Me.CheckBox71.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox71.TabIndex = 169
-        Me.CheckBox71.Text = "↘"
-        Me.CheckBox71.UseVisualStyleBackColor = True
-        '
-        'CheckBox72
-        '
-        Me.CheckBox72.AutoSize = True
-        Me.CheckBox72.Location = New System.Drawing.Point(285, 637)
-        Me.CheckBox72.Name = "CheckBox72"
-        Me.CheckBox72.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox72.TabIndex = 166
-        Me.CheckBox72.Text = "↘"
-        Me.CheckBox72.UseVisualStyleBackColor = True
-        '
-        'CheckBox73
-        '
-        Me.CheckBox73.AutoSize = True
-        Me.CheckBox73.Location = New System.Drawing.Point(392, 638)
-        Me.CheckBox73.Name = "CheckBox73"
-        Me.CheckBox73.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox73.TabIndex = 168
-        Me.CheckBox73.Text = "↓"
-        Me.CheckBox73.UseVisualStyleBackColor = True
-        '
-        'CheckBox74
-        '
-        Me.CheckBox74.AutoSize = True
-        Me.CheckBox74.Location = New System.Drawing.Point(234, 638)
-        Me.CheckBox74.Name = "CheckBox74"
-        Me.CheckBox74.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox74.TabIndex = 165
-        Me.CheckBox74.Text = "↓"
-        Me.CheckBox74.UseVisualStyleBackColor = True
-        '
-        'CheckBox49
-        '
-        Me.CheckBox49.AutoSize = True
-        Me.CheckBox49.Location = New System.Drawing.Point(125, 505)
-        Me.CheckBox49.Name = "CheckBox49"
-        Me.CheckBox49.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox49.TabIndex = 164
-        Me.CheckBox49.Text = "↘"
-        Me.CheckBox49.UseVisualStyleBackColor = True
-        '
-        'CheckBox50
-        '
-        Me.CheckBox50.AutoSize = True
-        Me.CheckBox50.Location = New System.Drawing.Point(74, 506)
-        Me.CheckBox50.Name = "CheckBox50"
-        Me.CheckBox50.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox50.TabIndex = 163
-        Me.CheckBox50.Text = "↓"
-        Me.CheckBox50.UseVisualStyleBackColor = True
-        '
-        'CheckBox51
-        '
-        Me.CheckBox51.AutoSize = True
-        Me.CheckBox51.Location = New System.Drawing.Point(657, 506)
-        Me.CheckBox51.Name = "CheckBox51"
-        Me.CheckBox51.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox51.TabIndex = 162
-        Me.CheckBox51.Text = "↙"
-        Me.CheckBox51.UseVisualStyleBackColor = True
-        '
-        'CheckBox52
-        '
-        Me.CheckBox52.AutoSize = True
-        Me.CheckBox52.Location = New System.Drawing.Point(707, 507)
-        Me.CheckBox52.Name = "CheckBox52"
-        Me.CheckBox52.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox52.TabIndex = 161
-        Me.CheckBox52.Text = "↓"
-        Me.CheckBox52.UseVisualStyleBackColor = True
-        '
-        'CheckBox53
-        '
-        Me.CheckBox53.AutoSize = True
-        Me.CheckBox53.Location = New System.Drawing.Point(499, 506)
-        Me.CheckBox53.Name = "CheckBox53"
-        Me.CheckBox53.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox53.TabIndex = 160
-        Me.CheckBox53.Text = "↙"
-        Me.CheckBox53.UseVisualStyleBackColor = True
-        '
-        'CheckBox54
-        '
-        Me.CheckBox54.AutoSize = True
-        Me.CheckBox54.Location = New System.Drawing.Point(600, 506)
-        Me.CheckBox54.Name = "CheckBox54"
-        Me.CheckBox54.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox54.TabIndex = 159
-        Me.CheckBox54.Text = "↘"
-        Me.CheckBox54.UseVisualStyleBackColor = True
-        '
-        'CheckBox55
-        '
-        Me.CheckBox55.AutoSize = True
-        Me.CheckBox55.Location = New System.Drawing.Point(549, 507)
-        Me.CheckBox55.Name = "CheckBox55"
-        Me.CheckBox55.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox55.TabIndex = 158
-        Me.CheckBox55.Text = "↓"
-        Me.CheckBox55.UseVisualStyleBackColor = True
-        '
-        'CheckBox56
-        '
-        Me.CheckBox56.AutoSize = True
-        Me.CheckBox56.Location = New System.Drawing.Point(342, 506)
-        Me.CheckBox56.Name = "CheckBox56"
-        Me.CheckBox56.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox56.TabIndex = 157
-        Me.CheckBox56.Text = "↙"
-        Me.CheckBox56.UseVisualStyleBackColor = True
-        '
-        'CheckBox57
-        '
-        Me.CheckBox57.AutoSize = True
-        Me.CheckBox57.Location = New System.Drawing.Point(184, 506)
-        Me.CheckBox57.Name = "CheckBox57"
-        Me.CheckBox57.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox57.TabIndex = 154
-        Me.CheckBox57.Text = "↙"
-        Me.CheckBox57.UseVisualStyleBackColor = True
-        '
-        'CheckBox58
-        '
-        Me.CheckBox58.AutoSize = True
-        Me.CheckBox58.Location = New System.Drawing.Point(443, 506)
-        Me.CheckBox58.Name = "CheckBox58"
-        Me.CheckBox58.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox58.TabIndex = 156
-        Me.CheckBox58.Text = "↘"
-        Me.CheckBox58.UseVisualStyleBackColor = True
-        '
-        'CheckBox59
-        '
-        Me.CheckBox59.AutoSize = True
-        Me.CheckBox59.Location = New System.Drawing.Point(285, 506)
-        Me.CheckBox59.Name = "CheckBox59"
-        Me.CheckBox59.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox59.TabIndex = 153
-        Me.CheckBox59.Text = "↘"
-        Me.CheckBox59.UseVisualStyleBackColor = True
-        '
-        'CheckBox60
-        '
-        Me.CheckBox60.AutoSize = True
-        Me.CheckBox60.Location = New System.Drawing.Point(392, 507)
-        Me.CheckBox60.Name = "CheckBox60"
-        Me.CheckBox60.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox60.TabIndex = 155
-        Me.CheckBox60.Text = "↓"
-        Me.CheckBox60.UseVisualStyleBackColor = True
-        '
-        'CheckBox61
-        '
-        Me.CheckBox61.AutoSize = True
-        Me.CheckBox61.Location = New System.Drawing.Point(234, 507)
-        Me.CheckBox61.Name = "CheckBox61"
-        Me.CheckBox61.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox61.TabIndex = 152
-        Me.CheckBox61.Text = "↓"
-        Me.CheckBox61.UseVisualStyleBackColor = True
-        '
-        'CheckBox34
-        '
-        Me.CheckBox34.AutoSize = True
-        Me.CheckBox34.Location = New System.Drawing.Point(125, 374)
-        Me.CheckBox34.Name = "CheckBox34"
-        Me.CheckBox34.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox34.TabIndex = 151
-        Me.CheckBox34.Text = "↘"
-        Me.CheckBox34.UseVisualStyleBackColor = True
-        '
-        'CheckBox35
-        '
-        Me.CheckBox35.AutoSize = True
-        Me.CheckBox35.Location = New System.Drawing.Point(74, 375)
-        Me.CheckBox35.Name = "CheckBox35"
-        Me.CheckBox35.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox35.TabIndex = 150
-        Me.CheckBox35.Text = "↓"
-        Me.CheckBox35.UseVisualStyleBackColor = True
-        '
-        'CheckBox37
-        '
-        Me.CheckBox37.AutoSize = True
-        Me.CheckBox37.Location = New System.Drawing.Point(657, 375)
-        Me.CheckBox37.Name = "CheckBox37"
-        Me.CheckBox37.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox37.TabIndex = 149
-        Me.CheckBox37.Text = "↙"
-        Me.CheckBox37.UseVisualStyleBackColor = True
-        '
-        'CheckBox38
-        '
-        Me.CheckBox38.AutoSize = True
-        Me.CheckBox38.Location = New System.Drawing.Point(707, 376)
-        Me.CheckBox38.Name = "CheckBox38"
-        Me.CheckBox38.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox38.TabIndex = 148
-        Me.CheckBox38.Text = "↓"
-        Me.CheckBox38.UseVisualStyleBackColor = True
-        '
-        'CheckBox40
-        '
-        Me.CheckBox40.AutoSize = True
-        Me.CheckBox40.Location = New System.Drawing.Point(499, 375)
-        Me.CheckBox40.Name = "CheckBox40"
-        Me.CheckBox40.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox40.TabIndex = 147
-        Me.CheckBox40.Text = "↙"
-        Me.CheckBox40.UseVisualStyleBackColor = True
-        '
-        'CheckBox41
-        '
-        Me.CheckBox41.AutoSize = True
-        Me.CheckBox41.Location = New System.Drawing.Point(600, 375)
-        Me.CheckBox41.Name = "CheckBox41"
-        Me.CheckBox41.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox41.TabIndex = 146
-        Me.CheckBox41.Text = "↘"
-        Me.CheckBox41.UseVisualStyleBackColor = True
-        '
-        'CheckBox42
-        '
-        Me.CheckBox42.AutoSize = True
-        Me.CheckBox42.Location = New System.Drawing.Point(549, 376)
-        Me.CheckBox42.Name = "CheckBox42"
-        Me.CheckBox42.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox42.TabIndex = 145
-        Me.CheckBox42.Text = "↓"
-        Me.CheckBox42.UseVisualStyleBackColor = True
-        '
-        'CheckBox43
-        '
-        Me.CheckBox43.AutoSize = True
-        Me.CheckBox43.Location = New System.Drawing.Point(342, 375)
-        Me.CheckBox43.Name = "CheckBox43"
-        Me.CheckBox43.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox43.TabIndex = 144
-        Me.CheckBox43.Text = "↙"
-        Me.CheckBox43.UseVisualStyleBackColor = True
-        '
-        'CheckBox44
-        '
-        Me.CheckBox44.AutoSize = True
-        Me.CheckBox44.Location = New System.Drawing.Point(184, 375)
-        Me.CheckBox44.Name = "CheckBox44"
-        Me.CheckBox44.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox44.TabIndex = 141
-        Me.CheckBox44.Text = "↙"
-        Me.CheckBox44.UseVisualStyleBackColor = True
-        '
-        'CheckBox45
-        '
-        Me.CheckBox45.AutoSize = True
-        Me.CheckBox45.Location = New System.Drawing.Point(443, 375)
-        Me.CheckBox45.Name = "CheckBox45"
-        Me.CheckBox45.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox45.TabIndex = 143
-        Me.CheckBox45.Text = "↘"
-        Me.CheckBox45.UseVisualStyleBackColor = True
-        '
-        'CheckBox46
-        '
-        Me.CheckBox46.AutoSize = True
-        Me.CheckBox46.Location = New System.Drawing.Point(285, 375)
-        Me.CheckBox46.Name = "CheckBox46"
-        Me.CheckBox46.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox46.TabIndex = 140
-        Me.CheckBox46.Text = "↘"
-        Me.CheckBox46.UseVisualStyleBackColor = True
-        '
-        'CheckBox47
-        '
-        Me.CheckBox47.AutoSize = True
-        Me.CheckBox47.Location = New System.Drawing.Point(392, 376)
-        Me.CheckBox47.Name = "CheckBox47"
-        Me.CheckBox47.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox47.TabIndex = 142
-        Me.CheckBox47.Text = "↓"
-        Me.CheckBox47.UseVisualStyleBackColor = True
-        '
-        'CheckBox48
-        '
-        Me.CheckBox48.AutoSize = True
-        Me.CheckBox48.Location = New System.Drawing.Point(234, 376)
-        Me.CheckBox48.Name = "CheckBox48"
-        Me.CheckBox48.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox48.TabIndex = 139
-        Me.CheckBox48.Text = "↓"
-        Me.CheckBox48.UseVisualStyleBackColor = True
-        '
-        'CheckBox21
-        '
-        Me.CheckBox21.AutoSize = True
-        Me.CheckBox21.Location = New System.Drawing.Point(125, 246)
-        Me.CheckBox21.Name = "CheckBox21"
-        Me.CheckBox21.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox21.TabIndex = 138
-        Me.CheckBox21.Text = "↘"
-        Me.CheckBox21.UseVisualStyleBackColor = True
-        '
-        'CheckBox22
-        '
-        Me.CheckBox22.AutoSize = True
-        Me.CheckBox22.Location = New System.Drawing.Point(74, 247)
-        Me.CheckBox22.Name = "CheckBox22"
-        Me.CheckBox22.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox22.TabIndex = 137
-        Me.CheckBox22.Text = "↓"
-        Me.CheckBox22.UseVisualStyleBackColor = True
-        '
-        'CheckBox23
-        '
-        Me.CheckBox23.AutoSize = True
-        Me.CheckBox23.Location = New System.Drawing.Point(657, 247)
-        Me.CheckBox23.Name = "CheckBox23"
-        Me.CheckBox23.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox23.TabIndex = 136
-        Me.CheckBox23.Text = "↙"
-        Me.CheckBox23.UseVisualStyleBackColor = True
-        '
-        'CheckBox24
-        '
-        Me.CheckBox24.AutoSize = True
-        Me.CheckBox24.Location = New System.Drawing.Point(707, 248)
-        Me.CheckBox24.Name = "CheckBox24"
-        Me.CheckBox24.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox24.TabIndex = 135
-        Me.CheckBox24.Text = "↓"
-        Me.CheckBox24.UseVisualStyleBackColor = True
-        '
-        'CheckBox25
-        '
-        Me.CheckBox25.AutoSize = True
-        Me.CheckBox25.Location = New System.Drawing.Point(499, 247)
-        Me.CheckBox25.Name = "CheckBox25"
-        Me.CheckBox25.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox25.TabIndex = 134
-        Me.CheckBox25.Text = "↙"
-        Me.CheckBox25.UseVisualStyleBackColor = True
-        '
-        'CheckBox26
-        '
-        Me.CheckBox26.AutoSize = True
-        Me.CheckBox26.Location = New System.Drawing.Point(600, 247)
-        Me.CheckBox26.Name = "CheckBox26"
-        Me.CheckBox26.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox26.TabIndex = 133
-        Me.CheckBox26.Text = "↘"
-        Me.CheckBox26.UseVisualStyleBackColor = True
-        '
-        'CheckBox27
-        '
-        Me.CheckBox27.AutoSize = True
-        Me.CheckBox27.Location = New System.Drawing.Point(549, 248)
-        Me.CheckBox27.Name = "CheckBox27"
-        Me.CheckBox27.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox27.TabIndex = 132
-        Me.CheckBox27.Text = "↓"
-        Me.CheckBox27.UseVisualStyleBackColor = True
-        '
-        'CheckBox28
-        '
-        Me.CheckBox28.AutoSize = True
-        Me.CheckBox28.Location = New System.Drawing.Point(342, 247)
-        Me.CheckBox28.Name = "CheckBox28"
-        Me.CheckBox28.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox28.TabIndex = 131
-        Me.CheckBox28.Text = "↙"
-        Me.CheckBox28.UseVisualStyleBackColor = True
-        '
-        'CheckBox29
-        '
-        Me.CheckBox29.AutoSize = True
-        Me.CheckBox29.Location = New System.Drawing.Point(184, 247)
-        Me.CheckBox29.Name = "CheckBox29"
-        Me.CheckBox29.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox29.TabIndex = 128
-        Me.CheckBox29.Text = "↙"
-        Me.CheckBox29.UseVisualStyleBackColor = True
-        '
-        'CheckBox30
-        '
-        Me.CheckBox30.AutoSize = True
-        Me.CheckBox30.Location = New System.Drawing.Point(443, 247)
-        Me.CheckBox30.Name = "CheckBox30"
-        Me.CheckBox30.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox30.TabIndex = 130
-        Me.CheckBox30.Text = "↘"
-        Me.CheckBox30.UseVisualStyleBackColor = True
-        '
-        'CheckBox31
-        '
-        Me.CheckBox31.AutoSize = True
-        Me.CheckBox31.Location = New System.Drawing.Point(285, 247)
-        Me.CheckBox31.Name = "CheckBox31"
-        Me.CheckBox31.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox31.TabIndex = 127
-        Me.CheckBox31.Text = "↘"
-        Me.CheckBox31.UseVisualStyleBackColor = True
-        '
-        'CheckBox32
-        '
-        Me.CheckBox32.AutoSize = True
-        Me.CheckBox32.Location = New System.Drawing.Point(392, 248)
-        Me.CheckBox32.Name = "CheckBox32"
-        Me.CheckBox32.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox32.TabIndex = 129
-        Me.CheckBox32.Text = "↓"
-        Me.CheckBox32.UseVisualStyleBackColor = True
-        '
-        'CheckBox33
-        '
-        Me.CheckBox33.AutoSize = True
-        Me.CheckBox33.Location = New System.Drawing.Point(234, 248)
-        Me.CheckBox33.Name = "CheckBox33"
-        Me.CheckBox33.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox33.TabIndex = 126
-        Me.CheckBox33.Text = "↓"
-        Me.CheckBox33.UseVisualStyleBackColor = True
-        '
-        'CheckBox19
-        '
-        Me.CheckBox19.AutoSize = True
-        Me.CheckBox19.Location = New System.Drawing.Point(125, 112)
-        Me.CheckBox19.Name = "CheckBox19"
-        Me.CheckBox19.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox19.TabIndex = 125
-        Me.CheckBox19.Text = "↘"
-        Me.CheckBox19.UseVisualStyleBackColor = True
-        '
-        'CheckBox20
-        '
-        Me.CheckBox20.AutoSize = True
-        Me.CheckBox20.Location = New System.Drawing.Point(74, 113)
-        Me.CheckBox20.Name = "CheckBox20"
-        Me.CheckBox20.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox20.TabIndex = 124
-        Me.CheckBox20.Text = "↓"
-        Me.CheckBox20.UseVisualStyleBackColor = True
-        '
-        'CheckBox17
-        '
-        Me.CheckBox17.AutoSize = True
-        Me.CheckBox17.Location = New System.Drawing.Point(657, 113)
-        Me.CheckBox17.Name = "CheckBox17"
-        Me.CheckBox17.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox17.TabIndex = 123
-        Me.CheckBox17.Text = "↙"
-        Me.CheckBox17.UseVisualStyleBackColor = True
-        '
-        'CheckBox18
-        '
-        Me.CheckBox18.AutoSize = True
-        Me.CheckBox18.Location = New System.Drawing.Point(707, 114)
-        Me.CheckBox18.Name = "CheckBox18"
-        Me.CheckBox18.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox18.TabIndex = 122
-        Me.CheckBox18.Text = "↓"
-        Me.CheckBox18.UseVisualStyleBackColor = True
-        '
-        'CheckBox14
-        '
-        Me.CheckBox14.AutoSize = True
-        Me.CheckBox14.Location = New System.Drawing.Point(499, 113)
-        Me.CheckBox14.Name = "CheckBox14"
-        Me.CheckBox14.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox14.TabIndex = 121
-        Me.CheckBox14.Text = "↙"
-        Me.CheckBox14.UseVisualStyleBackColor = True
-        '
-        'CheckBox15
-        '
-        Me.CheckBox15.AutoSize = True
-        Me.CheckBox15.Location = New System.Drawing.Point(600, 113)
-        Me.CheckBox15.Name = "CheckBox15"
-        Me.CheckBox15.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox15.TabIndex = 120
-        Me.CheckBox15.Text = "↘"
-        Me.CheckBox15.UseVisualStyleBackColor = True
-        '
-        'CheckBox16
-        '
-        Me.CheckBox16.AutoSize = True
-        Me.CheckBox16.Location = New System.Drawing.Point(549, 114)
-        Me.CheckBox16.Name = "CheckBox16"
-        Me.CheckBox16.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox16.TabIndex = 119
-        Me.CheckBox16.Text = "↓"
-        Me.CheckBox16.UseVisualStyleBackColor = True
-        '
-        'CheckBox10
-        '
-        Me.CheckBox10.AutoSize = True
-        Me.CheckBox10.Location = New System.Drawing.Point(342, 113)
-        Me.CheckBox10.Name = "CheckBox10"
-        Me.CheckBox10.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox10.TabIndex = 118
-        Me.CheckBox10.Text = "↙"
-        Me.CheckBox10.UseVisualStyleBackColor = True
-        '
-        'CheckBox39
-        '
-        Me.CheckBox39.AutoSize = True
-        Me.CheckBox39.Location = New System.Drawing.Point(184, 113)
-        Me.CheckBox39.Name = "CheckBox39"
-        Me.CheckBox39.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox39.TabIndex = 115
-        Me.CheckBox39.Text = "↙"
-        Me.CheckBox39.UseVisualStyleBackColor = True
-        '
-        'CheckBox11
-        '
-        Me.CheckBox11.AutoSize = True
-        Me.CheckBox11.Location = New System.Drawing.Point(443, 113)
-        Me.CheckBox11.Name = "CheckBox11"
-        Me.CheckBox11.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox11.TabIndex = 117
-        Me.CheckBox11.Text = "↘"
-        Me.CheckBox11.UseVisualStyleBackColor = True
-        '
-        'CheckBox36
-        '
-        Me.CheckBox36.AutoSize = True
-        Me.CheckBox36.Location = New System.Drawing.Point(285, 113)
-        Me.CheckBox36.Name = "CheckBox36"
-        Me.CheckBox36.Size = New System.Drawing.Size(32, 16)
-        Me.CheckBox36.TabIndex = 114
-        Me.CheckBox36.Text = "↘"
-        Me.CheckBox36.UseVisualStyleBackColor = True
-        '
-        'CheckBox12
-        '
-        Me.CheckBox12.AutoSize = True
-        Me.CheckBox12.Location = New System.Drawing.Point(392, 114)
-        Me.CheckBox12.Name = "CheckBox12"
-        Me.CheckBox12.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox12.TabIndex = 116
-        Me.CheckBox12.Text = "↓"
-        Me.CheckBox12.UseVisualStyleBackColor = True
-        '
-        'CheckBox13
-        '
-        Me.CheckBox13.AutoSize = True
-        Me.CheckBox13.Location = New System.Drawing.Point(234, 114)
-        Me.CheckBox13.Name = "CheckBox13"
-        Me.CheckBox13.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox13.TabIndex = 113
-        Me.CheckBox13.Text = "↓"
-        Me.CheckBox13.UseVisualStyleBackColor = True
-        '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.Label6)
-        Me.Panel2.Controls.Add(Me.rbtn2R)
-        Me.Panel2.Controls.Add(Me.rbtn2I)
-        Me.Panel2.Controls.Add(Me.rbtn1F)
-        Me.Panel2.Location = New System.Drawing.Point(694, 227)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(205, 64)
-        Me.Panel2.TabIndex = 99
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.Blue
-        Me.Label6.Location = New System.Drawing.Point(13, 9)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(72, 16)
-        Me.Label6.TabIndex = 85
-        Me.Label6.Text = "表示切替"
-        '
-        'rbtn2R
-        '
-        Me.rbtn2R.AutoSize = True
-        Me.rbtn2R.Location = New System.Drawing.Point(150, 36)
-        Me.rbtn2R.Name = "rbtn2R"
-        Me.rbtn2R.Size = New System.Drawing.Size(47, 16)
-        Me.rbtn2R.TabIndex = 84
-        Me.rbtn2R.TabStop = True
-        Me.rbtn2R.Text = "療養"
-        Me.rbtn2R.UseVisualStyleBackColor = True
-        '
-        'rbtn2I
-        '
-        Me.rbtn2I.AutoSize = True
-        Me.rbtn2I.Location = New System.Drawing.Point(77, 36)
-        Me.rbtn2I.Name = "rbtn2I"
-        Me.rbtn2I.Size = New System.Drawing.Size(47, 16)
-        Me.rbtn2I.TabIndex = 83
-        Me.rbtn2I.TabStop = True
-        Me.rbtn2I.Text = "一般"
-        Me.rbtn2I.UseVisualStyleBackColor = True
-        '
-        'rbtn1F
-        '
-        Me.rbtn1F.AutoSize = True
-        Me.rbtn1F.Location = New System.Drawing.Point(15, 36)
-        Me.rbtn1F.Name = "rbtn1F"
-        Me.rbtn1F.Size = New System.Drawing.Size(36, 16)
-        Me.rbtn1F.TabIndex = 82
-        Me.rbtn1F.TabStop = True
-        Me.rbtn1F.Text = "1F"
-        Me.rbtn1F.UseVisualStyleBackColor = True
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(405, 96)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(59, 12)
-        Me.Label5.TabIndex = 95
-        Me.Label5.Text = "電話番号2"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(405, 73)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(59, 12)
-        Me.Label4.TabIndex = 94
-        Me.Label4.Text = "電話番号1"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(405, 44)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(29, 12)
-        Me.Label3.TabIndex = 93
-        Me.Label3.Text = "氏名"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(405, 15)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(73, 12)
-        Me.Label2.TabIndex = 92
-        Me.Label2.Text = "役職、所属等"
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.rbtnPrintout)
-        Me.Panel1.Controls.Add(Me.rbtnPreview)
-        Me.Panel1.Location = New System.Drawing.Point(848, 80)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(74, 38)
-        Me.Panel1.TabIndex = 91
-        '
-        'rbtnPrintout
-        '
-        Me.rbtnPrintout.AutoSize = True
-        Me.rbtnPrintout.Location = New System.Drawing.Point(4, 3)
-        Me.rbtnPrintout.Name = "rbtnPrintout"
-        Me.rbtnPrintout.Size = New System.Drawing.Size(47, 16)
-        Me.rbtnPrintout.TabIndex = 4
-        Me.rbtnPrintout.TabStop = True
-        Me.rbtnPrintout.Text = "印刷"
-        Me.rbtnPrintout.UseVisualStyleBackColor = True
-        '
-        'rbtnPreview
-        '
-        Me.rbtnPreview.AutoSize = True
-        Me.rbtnPreview.Location = New System.Drawing.Point(4, 19)
-        Me.rbtnPreview.Name = "rbtnPreview"
-        Me.rbtnPreview.Size = New System.Drawing.Size(63, 16)
-        Me.rbtnPreview.TabIndex = 5
-        Me.rbtnPreview.TabStop = True
-        Me.rbtnPreview.Text = "ﾌﾟﾚﾋﾞｭｰ"
-        Me.rbtnPreview.UseVisualStyleBackColor = True
-        '
-        'btnInputClear
-        '
-        Me.btnInputClear.Location = New System.Drawing.Point(694, 149)
-        Me.btnInputClear.Name = "btnInputClear"
-        Me.btnInputClear.Size = New System.Drawing.Size(123, 26)
-        Me.btnInputClear.TabIndex = 90
-        Me.btnInputClear.Text = "入力クリア"
-        Me.btnInputClear.UseVisualStyleBackColor = True
-        '
-        'btnPrint
-        '
-        Me.btnPrint.Location = New System.Drawing.Point(942, 84)
-        Me.btnPrint.Name = "btnPrint"
-        Me.btnPrint.Size = New System.Drawing.Size(74, 34)
-        Me.btnPrint.TabIndex = 89
-        Me.btnPrint.Text = "印刷"
-        Me.btnPrint.UseVisualStyleBackColor = True
-        '
-        'btnRegist
-        '
-        Me.btnRegist.Location = New System.Drawing.Point(694, 83)
-        Me.btnRegist.Name = "btnRegist"
-        Me.btnRegist.Size = New System.Drawing.Size(74, 34)
-        Me.btnRegist.TabIndex = 88
-        Me.btnRegist.Text = "登録"
-        Me.btnRegist.UseVisualStyleBackColor = True
-        '
-        'btnClearSelect
-        '
-        Me.btnClearSelect.Location = New System.Drawing.Point(28, 37)
-        Me.btnClearSelect.Name = "btnClearSelect"
-        Me.btnClearSelect.Size = New System.Drawing.Size(115, 23)
-        Me.btnClearSelect.TabIndex = 87
-        Me.btnClearSelect.Text = "選択解除"
-        Me.btnClearSelect.UseVisualStyleBackColor = True
-        '
-        'dgvStaff
-        '
-        Me.dgvStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvStaff.Location = New System.Drawing.Point(28, 66)
-        Me.dgvStaff.Name = "dgvStaff"
-        Me.dgvStaff.RowTemplate.Height = 21
-        Me.dgvStaff.Size = New System.Drawing.Size(114, 795)
-        Me.dgvStaff.TabIndex = 86
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(27, 20)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(116, 12)
-        Me.Label1.TabIndex = 85
-        Me.Label1.Text = "在職職員リスト（ｶﾅ順）"
-        '
-        'CheckBox5
-        '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(227, 383)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox5.TabIndex = 107
-        Me.CheckBox5.Text = "↓"
-        Me.CheckBox5.UseVisualStyleBackColor = True
-        '
-        'CheckBox6
-        '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Location = New System.Drawing.Point(384, 383)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox6.TabIndex = 108
-        Me.CheckBox6.Text = "↓"
-        Me.CheckBox6.UseVisualStyleBackColor = True
-        '
-        'CheckBox7
-        '
-        Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Location = New System.Drawing.Point(542, 383)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox7.TabIndex = 109
-        Me.CheckBox7.Text = "↓"
-        Me.CheckBox7.UseVisualStyleBackColor = True
-        '
-        'CheckBox8
-        '
-        Me.CheckBox8.AutoSize = True
-        Me.CheckBox8.Location = New System.Drawing.Point(696, 383)
-        Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox8.TabIndex = 110
-        Me.CheckBox8.Text = "↓"
-        Me.CheckBox8.UseVisualStyleBackColor = True
-        '
-        'CheckBox9
-        '
-        Me.CheckBox9.AutoSize = True
-        Me.CheckBox9.Location = New System.Drawing.Point(856, 383)
-        Me.CheckBox9.Name = "CheckBox9"
-        Me.CheckBox9.Size = New System.Drawing.Size(36, 16)
-        Me.CheckBox9.TabIndex = 111
-        Me.CheckBox9.Text = "↓"
-        Me.CheckBox9.UseVisualStyleBackColor = True
+        'dgvPanel
+        '
+        Me.dgvPanel.AutoScroll = True
+        Me.dgvPanel.Controls.Add(Me.chkRightB5)
+        Me.dgvPanel.Controls.Add(Me.chkDownB5)
+        Me.dgvPanel.Controls.Add(Me.chkLeftF5)
+        Me.dgvPanel.Controls.Add(Me.chkDownF5)
+        Me.dgvPanel.Controls.Add(Me.chkLeftE5)
+        Me.dgvPanel.Controls.Add(Me.chkRightE5)
+        Me.dgvPanel.Controls.Add(Me.chkDownE5)
+        Me.dgvPanel.Controls.Add(Me.chkLeftD5)
+        Me.dgvPanel.Controls.Add(Me.chkLeftC5)
+        Me.dgvPanel.Controls.Add(Me.chkRightD5)
+        Me.dgvPanel.Controls.Add(Me.chkRightC5)
+        Me.dgvPanel.Controls.Add(Me.chkDownD5)
+        Me.dgvPanel.Controls.Add(Me.chkDownC5)
+        Me.dgvPanel.Controls.Add(Me.chkRightB4)
+        Me.dgvPanel.Controls.Add(Me.chkDownB4)
+        Me.dgvPanel.Controls.Add(Me.chkLeftF4)
+        Me.dgvPanel.Controls.Add(Me.chkDownF4)
+        Me.dgvPanel.Controls.Add(Me.chkLeftE4)
+        Me.dgvPanel.Controls.Add(Me.chkRightE4)
+        Me.dgvPanel.Controls.Add(Me.chkDownE4)
+        Me.dgvPanel.Controls.Add(Me.chkLeftD4)
+        Me.dgvPanel.Controls.Add(Me.chkLeftC4)
+        Me.dgvPanel.Controls.Add(Me.chkRightD4)
+        Me.dgvPanel.Controls.Add(Me.chkRightC4)
+        Me.dgvPanel.Controls.Add(Me.chkDownD4)
+        Me.dgvPanel.Controls.Add(Me.chkDownC4)
+        Me.dgvPanel.Controls.Add(Me.chkRightB3)
+        Me.dgvPanel.Controls.Add(Me.chkDownB3)
+        Me.dgvPanel.Controls.Add(Me.chkLeftF3)
+        Me.dgvPanel.Controls.Add(Me.chkDownF3)
+        Me.dgvPanel.Controls.Add(Me.chkLeftE3)
+        Me.dgvPanel.Controls.Add(Me.chkRightE3)
+        Me.dgvPanel.Controls.Add(Me.chkDownE3)
+        Me.dgvPanel.Controls.Add(Me.chkLeftD3)
+        Me.dgvPanel.Controls.Add(Me.chkLeftC3)
+        Me.dgvPanel.Controls.Add(Me.chkRightD3)
+        Me.dgvPanel.Controls.Add(Me.chkRightC3)
+        Me.dgvPanel.Controls.Add(Me.chkDownD3)
+        Me.dgvPanel.Controls.Add(Me.chkDownC3)
+        Me.dgvPanel.Controls.Add(Me.chkRightB2)
+        Me.dgvPanel.Controls.Add(Me.chkDownB2)
+        Me.dgvPanel.Controls.Add(Me.chkLeftF2)
+        Me.dgvPanel.Controls.Add(Me.chkDownF2)
+        Me.dgvPanel.Controls.Add(Me.chkLeftE2)
+        Me.dgvPanel.Controls.Add(Me.chkRightE2)
+        Me.dgvPanel.Controls.Add(Me.chkDownE2)
+        Me.dgvPanel.Controls.Add(Me.chkLeftD2)
+        Me.dgvPanel.Controls.Add(Me.chkLeftC2)
+        Me.dgvPanel.Controls.Add(Me.chkRightD2)
+        Me.dgvPanel.Controls.Add(Me.chkRightC2)
+        Me.dgvPanel.Controls.Add(Me.chkDownD2)
+        Me.dgvPanel.Controls.Add(Me.chkDownC2)
+        Me.dgvPanel.Controls.Add(Me.chkRightB1)
+        Me.dgvPanel.Controls.Add(Me.chkDownB1)
+        Me.dgvPanel.Controls.Add(Me.chkLeftF1)
+        Me.dgvPanel.Controls.Add(Me.chkDownF1)
+        Me.dgvPanel.Controls.Add(Me.chkLeftE1)
+        Me.dgvPanel.Controls.Add(Me.chkRightE1)
+        Me.dgvPanel.Controls.Add(Me.chkDownE1)
+        Me.dgvPanel.Controls.Add(Me.chkLeftD1)
+        Me.dgvPanel.Controls.Add(Me.chkLeftC1)
+        Me.dgvPanel.Controls.Add(Me.chkRightD1)
+        Me.dgvPanel.Controls.Add(Me.chkRightC1)
+        Me.dgvPanel.Controls.Add(Me.chkDownD1)
+        Me.dgvPanel.Controls.Add(Me.chkDownC1)
+        Me.dgvPanel.Controls.Add(Me.dgvContactF6)
+        Me.dgvPanel.Controls.Add(Me.dgvContactB6)
+        Me.dgvPanel.Controls.Add(Me.dgvContactF1)
+        Me.dgvPanel.Controls.Add(Me.dgvContactE6)
+        Me.dgvPanel.Controls.Add(Me.dgvContactB1)
+        Me.dgvPanel.Controls.Add(Me.dgvContactC6)
+        Me.dgvPanel.Controls.Add(Me.dgvContactF5)
+        Me.dgvPanel.Controls.Add(Me.dgvContactD6)
+        Me.dgvPanel.Controls.Add(Me.dgvContactB2)
+        Me.dgvPanel.Controls.Add(Me.dgvContactF4)
+        Me.dgvPanel.Controls.Add(Me.dgvContactB3)
+        Me.dgvPanel.Controls.Add(Me.dgvContactF3)
+        Me.dgvPanel.Controls.Add(Me.dgvContactB4)
+        Me.dgvPanel.Controls.Add(Me.dgvContactF2)
+        Me.dgvPanel.Controls.Add(Me.dgvContactB5)
+        Me.dgvPanel.Controls.Add(Me.dgvContactC1)
+        Me.dgvPanel.Controls.Add(Me.dgvContactE5)
+        Me.dgvPanel.Controls.Add(Me.dgvContactC2)
+        Me.dgvPanel.Controls.Add(Me.dgvContactE4)
+        Me.dgvPanel.Controls.Add(Me.dgvContactC3)
+        Me.dgvPanel.Controls.Add(Me.dgvContactE3)
+        Me.dgvPanel.Controls.Add(Me.dgvContactC4)
+        Me.dgvPanel.Controls.Add(Me.dgvContactE2)
+        Me.dgvPanel.Controls.Add(Me.dgvContactC5)
+        Me.dgvPanel.Controls.Add(Me.dgvContactE1)
+        Me.dgvPanel.Controls.Add(Me.dgvContactD1)
+        Me.dgvPanel.Controls.Add(Me.dgvContactD5)
+        Me.dgvPanel.Controls.Add(Me.dgvContactD2)
+        Me.dgvPanel.Controls.Add(Me.dgvContactD4)
+        Me.dgvPanel.Controls.Add(Me.dgvContactD3)
+        Me.dgvPanel.Location = New System.Drawing.Point(148, 405)
+        Me.dgvPanel.Name = "dgvPanel"
+        Me.dgvPanel.Size = New System.Drawing.Size(823, 570)
+        Me.dgvPanel.TabIndex = 100
+        '
+        'chkRightB5
+        '
+        Me.chkRightB5.AutoSize = True
+        Me.chkRightB5.Location = New System.Drawing.Point(125, 636)
+        Me.chkRightB5.Name = "chkRightB5"
+        Me.chkRightB5.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightB5.TabIndex = 177
+        Me.chkRightB5.Text = "↘"
+        Me.chkRightB5.UseVisualStyleBackColor = True
+        '
+        'chkDownB5
+        '
+        Me.chkDownB5.AutoSize = True
+        Me.chkDownB5.Location = New System.Drawing.Point(74, 637)
+        Me.chkDownB5.Name = "chkDownB5"
+        Me.chkDownB5.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownB5.TabIndex = 176
+        Me.chkDownB5.Text = "↓"
+        Me.chkDownB5.UseVisualStyleBackColor = True
+        '
+        'chkLeftF5
+        '
+        Me.chkLeftF5.AutoSize = True
+        Me.chkLeftF5.Location = New System.Drawing.Point(657, 637)
+        Me.chkLeftF5.Name = "chkLeftF5"
+        Me.chkLeftF5.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftF5.TabIndex = 175
+        Me.chkLeftF5.Text = "↙"
+        Me.chkLeftF5.UseVisualStyleBackColor = True
+        '
+        'chkDownF5
+        '
+        Me.chkDownF5.AutoSize = True
+        Me.chkDownF5.Location = New System.Drawing.Point(707, 638)
+        Me.chkDownF5.Name = "chkDownF5"
+        Me.chkDownF5.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownF5.TabIndex = 174
+        Me.chkDownF5.Text = "↓"
+        Me.chkDownF5.UseVisualStyleBackColor = True
+        '
+        'chkLeftE5
+        '
+        Me.chkLeftE5.AutoSize = True
+        Me.chkLeftE5.Location = New System.Drawing.Point(499, 637)
+        Me.chkLeftE5.Name = "chkLeftE5"
+        Me.chkLeftE5.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftE5.TabIndex = 173
+        Me.chkLeftE5.Text = "↙"
+        Me.chkLeftE5.UseVisualStyleBackColor = True
+        '
+        'chkRightE5
+        '
+        Me.chkRightE5.AutoSize = True
+        Me.chkRightE5.Location = New System.Drawing.Point(600, 637)
+        Me.chkRightE5.Name = "chkRightE5"
+        Me.chkRightE5.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightE5.TabIndex = 172
+        Me.chkRightE5.Text = "↘"
+        Me.chkRightE5.UseVisualStyleBackColor = True
+        '
+        'chkDownE5
+        '
+        Me.chkDownE5.AutoSize = True
+        Me.chkDownE5.Location = New System.Drawing.Point(549, 638)
+        Me.chkDownE5.Name = "chkDownE5"
+        Me.chkDownE5.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownE5.TabIndex = 171
+        Me.chkDownE5.Text = "↓"
+        Me.chkDownE5.UseVisualStyleBackColor = True
+        '
+        'chkLeftD5
+        '
+        Me.chkLeftD5.AutoSize = True
+        Me.chkLeftD5.Location = New System.Drawing.Point(342, 637)
+        Me.chkLeftD5.Name = "chkLeftD5"
+        Me.chkLeftD5.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftD5.TabIndex = 170
+        Me.chkLeftD5.Text = "↙"
+        Me.chkLeftD5.UseVisualStyleBackColor = True
+        '
+        'chkLeftC5
+        '
+        Me.chkLeftC5.AutoSize = True
+        Me.chkLeftC5.Location = New System.Drawing.Point(184, 637)
+        Me.chkLeftC5.Name = "chkLeftC5"
+        Me.chkLeftC5.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftC5.TabIndex = 167
+        Me.chkLeftC5.Text = "↙"
+        Me.chkLeftC5.UseVisualStyleBackColor = True
+        '
+        'chkRightD5
+        '
+        Me.chkRightD5.AutoSize = True
+        Me.chkRightD5.Location = New System.Drawing.Point(443, 637)
+        Me.chkRightD5.Name = "chkRightD5"
+        Me.chkRightD5.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightD5.TabIndex = 169
+        Me.chkRightD5.Text = "↘"
+        Me.chkRightD5.UseVisualStyleBackColor = True
+        '
+        'chkRightC5
+        '
+        Me.chkRightC5.AutoSize = True
+        Me.chkRightC5.Location = New System.Drawing.Point(285, 637)
+        Me.chkRightC5.Name = "chkRightC5"
+        Me.chkRightC5.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightC5.TabIndex = 166
+        Me.chkRightC5.Text = "↘"
+        Me.chkRightC5.UseVisualStyleBackColor = True
+        '
+        'chkDownD5
+        '
+        Me.chkDownD5.AutoSize = True
+        Me.chkDownD5.Location = New System.Drawing.Point(392, 638)
+        Me.chkDownD5.Name = "chkDownD5"
+        Me.chkDownD5.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownD5.TabIndex = 168
+        Me.chkDownD5.Text = "↓"
+        Me.chkDownD5.UseVisualStyleBackColor = True
+        '
+        'chkDownC5
+        '
+        Me.chkDownC5.AutoSize = True
+        Me.chkDownC5.Location = New System.Drawing.Point(234, 638)
+        Me.chkDownC5.Name = "chkDownC5"
+        Me.chkDownC5.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownC5.TabIndex = 165
+        Me.chkDownC5.Text = "↓"
+        Me.chkDownC5.UseVisualStyleBackColor = True
+        '
+        'chkRightB4
+        '
+        Me.chkRightB4.AutoSize = True
+        Me.chkRightB4.Location = New System.Drawing.Point(125, 505)
+        Me.chkRightB4.Name = "chkRightB4"
+        Me.chkRightB4.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightB4.TabIndex = 164
+        Me.chkRightB4.Text = "↘"
+        Me.chkRightB4.UseVisualStyleBackColor = True
+        '
+        'chkDownB4
+        '
+        Me.chkDownB4.AutoSize = True
+        Me.chkDownB4.Location = New System.Drawing.Point(74, 506)
+        Me.chkDownB4.Name = "chkDownB4"
+        Me.chkDownB4.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownB4.TabIndex = 163
+        Me.chkDownB4.Text = "↓"
+        Me.chkDownB4.UseVisualStyleBackColor = True
+        '
+        'chkLeftF4
+        '
+        Me.chkLeftF4.AutoSize = True
+        Me.chkLeftF4.Location = New System.Drawing.Point(657, 506)
+        Me.chkLeftF4.Name = "chkLeftF4"
+        Me.chkLeftF4.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftF4.TabIndex = 162
+        Me.chkLeftF4.Text = "↙"
+        Me.chkLeftF4.UseVisualStyleBackColor = True
+        '
+        'chkDownF4
+        '
+        Me.chkDownF4.AutoSize = True
+        Me.chkDownF4.Location = New System.Drawing.Point(707, 507)
+        Me.chkDownF4.Name = "chkDownF4"
+        Me.chkDownF4.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownF4.TabIndex = 161
+        Me.chkDownF4.Text = "↓"
+        Me.chkDownF4.UseVisualStyleBackColor = True
+        '
+        'chkLeftE4
+        '
+        Me.chkLeftE4.AutoSize = True
+        Me.chkLeftE4.Location = New System.Drawing.Point(499, 506)
+        Me.chkLeftE4.Name = "chkLeftE4"
+        Me.chkLeftE4.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftE4.TabIndex = 160
+        Me.chkLeftE4.Text = "↙"
+        Me.chkLeftE4.UseVisualStyleBackColor = True
+        '
+        'chkRightE4
+        '
+        Me.chkRightE4.AutoSize = True
+        Me.chkRightE4.Location = New System.Drawing.Point(600, 506)
+        Me.chkRightE4.Name = "chkRightE4"
+        Me.chkRightE4.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightE4.TabIndex = 159
+        Me.chkRightE4.Text = "↘"
+        Me.chkRightE4.UseVisualStyleBackColor = True
+        '
+        'chkDownE4
+        '
+        Me.chkDownE4.AutoSize = True
+        Me.chkDownE4.Location = New System.Drawing.Point(549, 507)
+        Me.chkDownE4.Name = "chkDownE4"
+        Me.chkDownE4.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownE4.TabIndex = 158
+        Me.chkDownE4.Text = "↓"
+        Me.chkDownE4.UseVisualStyleBackColor = True
+        '
+        'chkLeftD4
+        '
+        Me.chkLeftD4.AutoSize = True
+        Me.chkLeftD4.Location = New System.Drawing.Point(342, 506)
+        Me.chkLeftD4.Name = "chkLeftD4"
+        Me.chkLeftD4.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftD4.TabIndex = 157
+        Me.chkLeftD4.Text = "↙"
+        Me.chkLeftD4.UseVisualStyleBackColor = True
+        '
+        'chkLeftC4
+        '
+        Me.chkLeftC4.AutoSize = True
+        Me.chkLeftC4.Location = New System.Drawing.Point(184, 506)
+        Me.chkLeftC4.Name = "chkLeftC4"
+        Me.chkLeftC4.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftC4.TabIndex = 154
+        Me.chkLeftC4.Text = "↙"
+        Me.chkLeftC4.UseVisualStyleBackColor = True
+        '
+        'chkRightD4
+        '
+        Me.chkRightD4.AutoSize = True
+        Me.chkRightD4.Location = New System.Drawing.Point(443, 506)
+        Me.chkRightD4.Name = "chkRightD4"
+        Me.chkRightD4.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightD4.TabIndex = 156
+        Me.chkRightD4.Text = "↘"
+        Me.chkRightD4.UseVisualStyleBackColor = True
+        '
+        'chkRightC4
+        '
+        Me.chkRightC4.AutoSize = True
+        Me.chkRightC4.Location = New System.Drawing.Point(285, 506)
+        Me.chkRightC4.Name = "chkRightC4"
+        Me.chkRightC4.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightC4.TabIndex = 153
+        Me.chkRightC4.Text = "↘"
+        Me.chkRightC4.UseVisualStyleBackColor = True
+        '
+        'chkDownD4
+        '
+        Me.chkDownD4.AutoSize = True
+        Me.chkDownD4.Location = New System.Drawing.Point(392, 507)
+        Me.chkDownD4.Name = "chkDownD4"
+        Me.chkDownD4.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownD4.TabIndex = 155
+        Me.chkDownD4.Text = "↓"
+        Me.chkDownD4.UseVisualStyleBackColor = True
+        '
+        'chkDownC4
+        '
+        Me.chkDownC4.AutoSize = True
+        Me.chkDownC4.Location = New System.Drawing.Point(234, 507)
+        Me.chkDownC4.Name = "chkDownC4"
+        Me.chkDownC4.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownC4.TabIndex = 152
+        Me.chkDownC4.Text = "↓"
+        Me.chkDownC4.UseVisualStyleBackColor = True
+        '
+        'chkRightB3
+        '
+        Me.chkRightB3.AutoSize = True
+        Me.chkRightB3.Location = New System.Drawing.Point(125, 374)
+        Me.chkRightB3.Name = "chkRightB3"
+        Me.chkRightB3.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightB3.TabIndex = 151
+        Me.chkRightB3.Text = "↘"
+        Me.chkRightB3.UseVisualStyleBackColor = True
+        '
+        'chkDownB3
+        '
+        Me.chkDownB3.AutoSize = True
+        Me.chkDownB3.Location = New System.Drawing.Point(74, 375)
+        Me.chkDownB3.Name = "chkDownB3"
+        Me.chkDownB3.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownB3.TabIndex = 150
+        Me.chkDownB3.Text = "↓"
+        Me.chkDownB3.UseVisualStyleBackColor = True
+        '
+        'chkLeftF3
+        '
+        Me.chkLeftF3.AutoSize = True
+        Me.chkLeftF3.Location = New System.Drawing.Point(657, 375)
+        Me.chkLeftF3.Name = "chkLeftF3"
+        Me.chkLeftF3.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftF3.TabIndex = 149
+        Me.chkLeftF3.Text = "↙"
+        Me.chkLeftF3.UseVisualStyleBackColor = True
+        '
+        'chkDownF3
+        '
+        Me.chkDownF3.AutoSize = True
+        Me.chkDownF3.Location = New System.Drawing.Point(707, 376)
+        Me.chkDownF3.Name = "chkDownF3"
+        Me.chkDownF3.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownF3.TabIndex = 148
+        Me.chkDownF3.Text = "↓"
+        Me.chkDownF3.UseVisualStyleBackColor = True
+        '
+        'chkLeftE3
+        '
+        Me.chkLeftE3.AutoSize = True
+        Me.chkLeftE3.Location = New System.Drawing.Point(499, 375)
+        Me.chkLeftE3.Name = "chkLeftE3"
+        Me.chkLeftE3.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftE3.TabIndex = 147
+        Me.chkLeftE3.Text = "↙"
+        Me.chkLeftE3.UseVisualStyleBackColor = True
+        '
+        'chkRightE3
+        '
+        Me.chkRightE3.AutoSize = True
+        Me.chkRightE3.Location = New System.Drawing.Point(600, 375)
+        Me.chkRightE3.Name = "chkRightE3"
+        Me.chkRightE3.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightE3.TabIndex = 146
+        Me.chkRightE3.Text = "↘"
+        Me.chkRightE3.UseVisualStyleBackColor = True
+        '
+        'chkDownE3
+        '
+        Me.chkDownE3.AutoSize = True
+        Me.chkDownE3.Location = New System.Drawing.Point(549, 376)
+        Me.chkDownE3.Name = "chkDownE3"
+        Me.chkDownE3.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownE3.TabIndex = 145
+        Me.chkDownE3.Text = "↓"
+        Me.chkDownE3.UseVisualStyleBackColor = True
+        '
+        'chkLeftD3
+        '
+        Me.chkLeftD3.AutoSize = True
+        Me.chkLeftD3.Location = New System.Drawing.Point(342, 375)
+        Me.chkLeftD3.Name = "chkLeftD3"
+        Me.chkLeftD3.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftD3.TabIndex = 144
+        Me.chkLeftD3.Text = "↙"
+        Me.chkLeftD3.UseVisualStyleBackColor = True
+        '
+        'chkLeftC3
+        '
+        Me.chkLeftC3.AutoSize = True
+        Me.chkLeftC3.Location = New System.Drawing.Point(184, 375)
+        Me.chkLeftC3.Name = "chkLeftC3"
+        Me.chkLeftC3.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftC3.TabIndex = 141
+        Me.chkLeftC3.Text = "↙"
+        Me.chkLeftC3.UseVisualStyleBackColor = True
+        '
+        'chkRightD3
+        '
+        Me.chkRightD3.AutoSize = True
+        Me.chkRightD3.Location = New System.Drawing.Point(443, 375)
+        Me.chkRightD3.Name = "chkRightD3"
+        Me.chkRightD3.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightD3.TabIndex = 143
+        Me.chkRightD3.Text = "↘"
+        Me.chkRightD3.UseVisualStyleBackColor = True
+        '
+        'chkRightC3
+        '
+        Me.chkRightC3.AutoSize = True
+        Me.chkRightC3.Location = New System.Drawing.Point(285, 375)
+        Me.chkRightC3.Name = "chkRightC3"
+        Me.chkRightC3.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightC3.TabIndex = 140
+        Me.chkRightC3.Text = "↘"
+        Me.chkRightC3.UseVisualStyleBackColor = True
+        '
+        'chkDownD3
+        '
+        Me.chkDownD3.AutoSize = True
+        Me.chkDownD3.Location = New System.Drawing.Point(392, 376)
+        Me.chkDownD3.Name = "chkDownD3"
+        Me.chkDownD3.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownD3.TabIndex = 142
+        Me.chkDownD3.Text = "↓"
+        Me.chkDownD3.UseVisualStyleBackColor = True
+        '
+        'chkDownC3
+        '
+        Me.chkDownC3.AutoSize = True
+        Me.chkDownC3.Location = New System.Drawing.Point(234, 376)
+        Me.chkDownC3.Name = "chkDownC3"
+        Me.chkDownC3.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownC3.TabIndex = 139
+        Me.chkDownC3.Text = "↓"
+        Me.chkDownC3.UseVisualStyleBackColor = True
+        '
+        'chkRightB2
+        '
+        Me.chkRightB2.AutoSize = True
+        Me.chkRightB2.Location = New System.Drawing.Point(125, 246)
+        Me.chkRightB2.Name = "chkRightB2"
+        Me.chkRightB2.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightB2.TabIndex = 138
+        Me.chkRightB2.Text = "↘"
+        Me.chkRightB2.UseVisualStyleBackColor = True
+        '
+        'chkDownB2
+        '
+        Me.chkDownB2.AutoSize = True
+        Me.chkDownB2.Location = New System.Drawing.Point(74, 247)
+        Me.chkDownB2.Name = "chkDownB2"
+        Me.chkDownB2.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownB2.TabIndex = 137
+        Me.chkDownB2.Text = "↓"
+        Me.chkDownB2.UseVisualStyleBackColor = True
+        '
+        'chkLeftF2
+        '
+        Me.chkLeftF2.AutoSize = True
+        Me.chkLeftF2.Location = New System.Drawing.Point(657, 247)
+        Me.chkLeftF2.Name = "chkLeftF2"
+        Me.chkLeftF2.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftF2.TabIndex = 136
+        Me.chkLeftF2.Text = "↙"
+        Me.chkLeftF2.UseVisualStyleBackColor = True
+        '
+        'chkDownF2
+        '
+        Me.chkDownF2.AutoSize = True
+        Me.chkDownF2.Location = New System.Drawing.Point(707, 248)
+        Me.chkDownF2.Name = "chkDownF2"
+        Me.chkDownF2.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownF2.TabIndex = 135
+        Me.chkDownF2.Text = "↓"
+        Me.chkDownF2.UseVisualStyleBackColor = True
+        '
+        'chkLeftE2
+        '
+        Me.chkLeftE2.AutoSize = True
+        Me.chkLeftE2.Location = New System.Drawing.Point(499, 247)
+        Me.chkLeftE2.Name = "chkLeftE2"
+        Me.chkLeftE2.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftE2.TabIndex = 134
+        Me.chkLeftE2.Text = "↙"
+        Me.chkLeftE2.UseVisualStyleBackColor = True
+        '
+        'chkRightE2
+        '
+        Me.chkRightE2.AutoSize = True
+        Me.chkRightE2.Location = New System.Drawing.Point(600, 247)
+        Me.chkRightE2.Name = "chkRightE2"
+        Me.chkRightE2.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightE2.TabIndex = 133
+        Me.chkRightE2.Text = "↘"
+        Me.chkRightE2.UseVisualStyleBackColor = True
+        '
+        'chkDownE2
+        '
+        Me.chkDownE2.AutoSize = True
+        Me.chkDownE2.Location = New System.Drawing.Point(549, 248)
+        Me.chkDownE2.Name = "chkDownE2"
+        Me.chkDownE2.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownE2.TabIndex = 132
+        Me.chkDownE2.Text = "↓"
+        Me.chkDownE2.UseVisualStyleBackColor = True
+        '
+        'chkLeftD2
+        '
+        Me.chkLeftD2.AutoSize = True
+        Me.chkLeftD2.Location = New System.Drawing.Point(342, 247)
+        Me.chkLeftD2.Name = "chkLeftD2"
+        Me.chkLeftD2.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftD2.TabIndex = 131
+        Me.chkLeftD2.Text = "↙"
+        Me.chkLeftD2.UseVisualStyleBackColor = True
+        '
+        'chkLeftC2
+        '
+        Me.chkLeftC2.AutoSize = True
+        Me.chkLeftC2.Location = New System.Drawing.Point(184, 247)
+        Me.chkLeftC2.Name = "chkLeftC2"
+        Me.chkLeftC2.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftC2.TabIndex = 128
+        Me.chkLeftC2.Text = "↙"
+        Me.chkLeftC2.UseVisualStyleBackColor = True
+        '
+        'chkRightD2
+        '
+        Me.chkRightD2.AutoSize = True
+        Me.chkRightD2.Location = New System.Drawing.Point(443, 247)
+        Me.chkRightD2.Name = "chkRightD2"
+        Me.chkRightD2.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightD2.TabIndex = 130
+        Me.chkRightD2.Text = "↘"
+        Me.chkRightD2.UseVisualStyleBackColor = True
+        '
+        'chkRightC2
+        '
+        Me.chkRightC2.AutoSize = True
+        Me.chkRightC2.Location = New System.Drawing.Point(285, 247)
+        Me.chkRightC2.Name = "chkRightC2"
+        Me.chkRightC2.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightC2.TabIndex = 127
+        Me.chkRightC2.Text = "↘"
+        Me.chkRightC2.UseVisualStyleBackColor = True
+        '
+        'chkDownD2
+        '
+        Me.chkDownD2.AutoSize = True
+        Me.chkDownD2.Location = New System.Drawing.Point(392, 248)
+        Me.chkDownD2.Name = "chkDownD2"
+        Me.chkDownD2.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownD2.TabIndex = 129
+        Me.chkDownD2.Text = "↓"
+        Me.chkDownD2.UseVisualStyleBackColor = True
+        '
+        'chkDownC2
+        '
+        Me.chkDownC2.AutoSize = True
+        Me.chkDownC2.Location = New System.Drawing.Point(234, 248)
+        Me.chkDownC2.Name = "chkDownC2"
+        Me.chkDownC2.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownC2.TabIndex = 126
+        Me.chkDownC2.Text = "↓"
+        Me.chkDownC2.UseVisualStyleBackColor = True
+        '
+        'chkRightB1
+        '
+        Me.chkRightB1.AutoSize = True
+        Me.chkRightB1.Location = New System.Drawing.Point(125, 112)
+        Me.chkRightB1.Name = "chkRightB1"
+        Me.chkRightB1.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightB1.TabIndex = 125
+        Me.chkRightB1.Text = "↘"
+        Me.chkRightB1.UseVisualStyleBackColor = True
+        '
+        'chkDownB1
+        '
+        Me.chkDownB1.AutoSize = True
+        Me.chkDownB1.Location = New System.Drawing.Point(74, 113)
+        Me.chkDownB1.Name = "chkDownB1"
+        Me.chkDownB1.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownB1.TabIndex = 124
+        Me.chkDownB1.Text = "↓"
+        Me.chkDownB1.UseVisualStyleBackColor = True
+        '
+        'chkLeftF1
+        '
+        Me.chkLeftF1.AutoSize = True
+        Me.chkLeftF1.Location = New System.Drawing.Point(657, 113)
+        Me.chkLeftF1.Name = "chkLeftF1"
+        Me.chkLeftF1.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftF1.TabIndex = 123
+        Me.chkLeftF1.Text = "↙"
+        Me.chkLeftF1.UseVisualStyleBackColor = True
+        '
+        'chkDownF1
+        '
+        Me.chkDownF1.AutoSize = True
+        Me.chkDownF1.Location = New System.Drawing.Point(707, 114)
+        Me.chkDownF1.Name = "chkDownF1"
+        Me.chkDownF1.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownF1.TabIndex = 122
+        Me.chkDownF1.Text = "↓"
+        Me.chkDownF1.UseVisualStyleBackColor = True
+        '
+        'chkLeftE1
+        '
+        Me.chkLeftE1.AutoSize = True
+        Me.chkLeftE1.Location = New System.Drawing.Point(499, 113)
+        Me.chkLeftE1.Name = "chkLeftE1"
+        Me.chkLeftE1.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftE1.TabIndex = 121
+        Me.chkLeftE1.Text = "↙"
+        Me.chkLeftE1.UseVisualStyleBackColor = True
+        '
+        'chkRightE1
+        '
+        Me.chkRightE1.AutoSize = True
+        Me.chkRightE1.Location = New System.Drawing.Point(600, 113)
+        Me.chkRightE1.Name = "chkRightE1"
+        Me.chkRightE1.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightE1.TabIndex = 120
+        Me.chkRightE1.Text = "↘"
+        Me.chkRightE1.UseVisualStyleBackColor = True
+        '
+        'chkDownE1
+        '
+        Me.chkDownE1.AutoSize = True
+        Me.chkDownE1.Location = New System.Drawing.Point(549, 114)
+        Me.chkDownE1.Name = "chkDownE1"
+        Me.chkDownE1.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownE1.TabIndex = 119
+        Me.chkDownE1.Text = "↓"
+        Me.chkDownE1.UseVisualStyleBackColor = True
+        '
+        'chkLeftD1
+        '
+        Me.chkLeftD1.AutoSize = True
+        Me.chkLeftD1.Location = New System.Drawing.Point(342, 113)
+        Me.chkLeftD1.Name = "chkLeftD1"
+        Me.chkLeftD1.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftD1.TabIndex = 118
+        Me.chkLeftD1.Text = "↙"
+        Me.chkLeftD1.UseVisualStyleBackColor = True
+        '
+        'chkLeftC1
+        '
+        Me.chkLeftC1.AutoSize = True
+        Me.chkLeftC1.Location = New System.Drawing.Point(184, 113)
+        Me.chkLeftC1.Name = "chkLeftC1"
+        Me.chkLeftC1.Size = New System.Drawing.Size(32, 16)
+        Me.chkLeftC1.TabIndex = 115
+        Me.chkLeftC1.Text = "↙"
+        Me.chkLeftC1.UseVisualStyleBackColor = True
+        '
+        'chkRightD1
+        '
+        Me.chkRightD1.AutoSize = True
+        Me.chkRightD1.Location = New System.Drawing.Point(443, 113)
+        Me.chkRightD1.Name = "chkRightD1"
+        Me.chkRightD1.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightD1.TabIndex = 117
+        Me.chkRightD1.Text = "↘"
+        Me.chkRightD1.UseVisualStyleBackColor = True
+        '
+        'chkRightC1
+        '
+        Me.chkRightC1.AutoSize = True
+        Me.chkRightC1.Location = New System.Drawing.Point(285, 113)
+        Me.chkRightC1.Name = "chkRightC1"
+        Me.chkRightC1.Size = New System.Drawing.Size(32, 16)
+        Me.chkRightC1.TabIndex = 114
+        Me.chkRightC1.Text = "↘"
+        Me.chkRightC1.UseVisualStyleBackColor = True
+        '
+        'chkDownD1
+        '
+        Me.chkDownD1.AutoSize = True
+        Me.chkDownD1.Location = New System.Drawing.Point(392, 114)
+        Me.chkDownD1.Name = "chkDownD1"
+        Me.chkDownD1.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownD1.TabIndex = 116
+        Me.chkDownD1.Text = "↓"
+        Me.chkDownD1.UseVisualStyleBackColor = True
+        '
+        'chkDownC1
+        '
+        Me.chkDownC1.AutoSize = True
+        Me.chkDownC1.Location = New System.Drawing.Point(234, 114)
+        Me.chkDownC1.Name = "chkDownC1"
+        Me.chkDownC1.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownC1.TabIndex = 113
+        Me.chkDownC1.Text = "↓"
+        Me.chkDownC1.UseVisualStyleBackColor = True
         '
         'dgvContactF6
         '
@@ -1463,32 +1237,231 @@ Partial Class 職員連絡網改2
         Me.dgvContactD3.Size = New System.Drawing.Size(123, 98)
         Me.dgvContactD3.TabIndex = 68
         '
-        'dgvContactA3
+        'Panel2
         '
-        Me.dgvContactA3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvContactA3.Location = New System.Drawing.Point(490, 276)
-        Me.dgvContactA3.Name = "dgvContactA3"
-        Me.dgvContactA3.RowTemplate.Height = 21
-        Me.dgvContactA3.Size = New System.Drawing.Size(123, 98)
-        Me.dgvContactA3.TabIndex = 98
+        Me.Panel2.Controls.Add(Me.Label6)
+        Me.Panel2.Controls.Add(Me.rbtn2R)
+        Me.Panel2.Controls.Add(Me.rbtn2I)
+        Me.Panel2.Controls.Add(Me.rbtn1F)
+        Me.Panel2.Location = New System.Drawing.Point(694, 227)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(205, 64)
+        Me.Panel2.TabIndex = 99
         '
-        'dgvContactA2
+        'Label6
         '
-        Me.dgvContactA2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvContactA2.Location = New System.Drawing.Point(490, 145)
-        Me.dgvContactA2.Name = "dgvContactA2"
-        Me.dgvContactA2.RowTemplate.Height = 21
-        Me.dgvContactA2.Size = New System.Drawing.Size(123, 98)
-        Me.dgvContactA2.TabIndex = 97
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.Blue
+        Me.Label6.Location = New System.Drawing.Point(13, 9)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(72, 16)
+        Me.Label6.TabIndex = 85
+        Me.Label6.Text = "表示切替"
         '
-        'dgvContactA1
+        'rbtn2R
         '
-        Me.dgvContactA1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvContactA1.Location = New System.Drawing.Point(490, 14)
-        Me.dgvContactA1.Name = "dgvContactA1"
-        Me.dgvContactA1.RowTemplate.Height = 21
-        Me.dgvContactA1.Size = New System.Drawing.Size(123, 98)
-        Me.dgvContactA1.TabIndex = 96
+        Me.rbtn2R.AutoSize = True
+        Me.rbtn2R.Location = New System.Drawing.Point(150, 36)
+        Me.rbtn2R.Name = "rbtn2R"
+        Me.rbtn2R.Size = New System.Drawing.Size(47, 16)
+        Me.rbtn2R.TabIndex = 84
+        Me.rbtn2R.TabStop = True
+        Me.rbtn2R.Text = "療養"
+        Me.rbtn2R.UseVisualStyleBackColor = True
+        '
+        'rbtn2I
+        '
+        Me.rbtn2I.AutoSize = True
+        Me.rbtn2I.Location = New System.Drawing.Point(77, 36)
+        Me.rbtn2I.Name = "rbtn2I"
+        Me.rbtn2I.Size = New System.Drawing.Size(47, 16)
+        Me.rbtn2I.TabIndex = 83
+        Me.rbtn2I.TabStop = True
+        Me.rbtn2I.Text = "一般"
+        Me.rbtn2I.UseVisualStyleBackColor = True
+        '
+        'rbtn1F
+        '
+        Me.rbtn1F.AutoSize = True
+        Me.rbtn1F.Location = New System.Drawing.Point(15, 36)
+        Me.rbtn1F.Name = "rbtn1F"
+        Me.rbtn1F.Size = New System.Drawing.Size(36, 16)
+        Me.rbtn1F.TabIndex = 82
+        Me.rbtn1F.TabStop = True
+        Me.rbtn1F.Text = "1F"
+        Me.rbtn1F.UseVisualStyleBackColor = True
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(405, 96)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(59, 12)
+        Me.Label5.TabIndex = 95
+        Me.Label5.Text = "電話番号2"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(405, 73)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(59, 12)
+        Me.Label4.TabIndex = 94
+        Me.Label4.Text = "電話番号1"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(405, 44)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(29, 12)
+        Me.Label3.TabIndex = 93
+        Me.Label3.Text = "氏名"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(405, 15)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(73, 12)
+        Me.Label2.TabIndex = 92
+        Me.Label2.Text = "役職、所属等"
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.rbtnPrintout)
+        Me.Panel1.Controls.Add(Me.rbtnPreview)
+        Me.Panel1.Location = New System.Drawing.Point(848, 80)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(74, 38)
+        Me.Panel1.TabIndex = 91
+        '
+        'rbtnPrintout
+        '
+        Me.rbtnPrintout.AutoSize = True
+        Me.rbtnPrintout.Location = New System.Drawing.Point(4, 3)
+        Me.rbtnPrintout.Name = "rbtnPrintout"
+        Me.rbtnPrintout.Size = New System.Drawing.Size(47, 16)
+        Me.rbtnPrintout.TabIndex = 4
+        Me.rbtnPrintout.TabStop = True
+        Me.rbtnPrintout.Text = "印刷"
+        Me.rbtnPrintout.UseVisualStyleBackColor = True
+        '
+        'rbtnPreview
+        '
+        Me.rbtnPreview.AutoSize = True
+        Me.rbtnPreview.Location = New System.Drawing.Point(4, 19)
+        Me.rbtnPreview.Name = "rbtnPreview"
+        Me.rbtnPreview.Size = New System.Drawing.Size(63, 16)
+        Me.rbtnPreview.TabIndex = 5
+        Me.rbtnPreview.TabStop = True
+        Me.rbtnPreview.Text = "ﾌﾟﾚﾋﾞｭｰ"
+        Me.rbtnPreview.UseVisualStyleBackColor = True
+        '
+        'btnInputClear
+        '
+        Me.btnInputClear.Location = New System.Drawing.Point(694, 149)
+        Me.btnInputClear.Name = "btnInputClear"
+        Me.btnInputClear.Size = New System.Drawing.Size(123, 26)
+        Me.btnInputClear.TabIndex = 90
+        Me.btnInputClear.Text = "入力クリア"
+        Me.btnInputClear.UseVisualStyleBackColor = True
+        '
+        'btnPrint
+        '
+        Me.btnPrint.Location = New System.Drawing.Point(942, 84)
+        Me.btnPrint.Name = "btnPrint"
+        Me.btnPrint.Size = New System.Drawing.Size(74, 34)
+        Me.btnPrint.TabIndex = 89
+        Me.btnPrint.Text = "印刷"
+        Me.btnPrint.UseVisualStyleBackColor = True
+        '
+        'btnRegist
+        '
+        Me.btnRegist.Location = New System.Drawing.Point(694, 83)
+        Me.btnRegist.Name = "btnRegist"
+        Me.btnRegist.Size = New System.Drawing.Size(74, 34)
+        Me.btnRegist.TabIndex = 88
+        Me.btnRegist.Text = "登録"
+        Me.btnRegist.UseVisualStyleBackColor = True
+        '
+        'btnClearSelect
+        '
+        Me.btnClearSelect.Location = New System.Drawing.Point(28, 37)
+        Me.btnClearSelect.Name = "btnClearSelect"
+        Me.btnClearSelect.Size = New System.Drawing.Size(115, 23)
+        Me.btnClearSelect.TabIndex = 87
+        Me.btnClearSelect.Text = "選択解除"
+        Me.btnClearSelect.UseVisualStyleBackColor = True
+        '
+        'dgvStaff
+        '
+        Me.dgvStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvStaff.Location = New System.Drawing.Point(28, 66)
+        Me.dgvStaff.Name = "dgvStaff"
+        Me.dgvStaff.RowTemplate.Height = 21
+        Me.dgvStaff.Size = New System.Drawing.Size(114, 795)
+        Me.dgvStaff.TabIndex = 86
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(27, 20)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(116, 12)
+        Me.Label1.TabIndex = 85
+        Me.Label1.Text = "在職職員リスト（ｶﾅ順）"
+        '
+        'chkLLA3
+        '
+        Me.chkLLA3.AutoSize = True
+        Me.chkLLA3.Location = New System.Drawing.Point(227, 383)
+        Me.chkLLA3.Name = "chkLLA3"
+        Me.chkLLA3.Size = New System.Drawing.Size(36, 16)
+        Me.chkLLA3.TabIndex = 107
+        Me.chkLLA3.Text = "↓"
+        Me.chkLLA3.UseVisualStyleBackColor = True
+        '
+        'chkLeftA3
+        '
+        Me.chkLeftA3.AutoSize = True
+        Me.chkLeftA3.Location = New System.Drawing.Point(384, 383)
+        Me.chkLeftA3.Name = "chkLeftA3"
+        Me.chkLeftA3.Size = New System.Drawing.Size(36, 16)
+        Me.chkLeftA3.TabIndex = 108
+        Me.chkLeftA3.Text = "↓"
+        Me.chkLeftA3.UseVisualStyleBackColor = True
+        '
+        'chkDownA3
+        '
+        Me.chkDownA3.AutoSize = True
+        Me.chkDownA3.Location = New System.Drawing.Point(542, 383)
+        Me.chkDownA3.Name = "chkDownA3"
+        Me.chkDownA3.Size = New System.Drawing.Size(36, 16)
+        Me.chkDownA3.TabIndex = 109
+        Me.chkDownA3.Text = "↓"
+        Me.chkDownA3.UseVisualStyleBackColor = True
+        '
+        'chkRightA3
+        '
+        Me.chkRightA3.AutoSize = True
+        Me.chkRightA3.Location = New System.Drawing.Point(696, 383)
+        Me.chkRightA3.Name = "chkRightA3"
+        Me.chkRightA3.Size = New System.Drawing.Size(36, 16)
+        Me.chkRightA3.TabIndex = 110
+        Me.chkRightA3.Text = "↓"
+        Me.chkRightA3.UseVisualStyleBackColor = True
+        '
+        'chkRRA3
+        '
+        Me.chkRRA3.AutoSize = True
+        Me.chkRRA3.Location = New System.Drawing.Point(856, 383)
+        Me.chkRRA3.Name = "chkRRA3"
+        Me.chkRRA3.Size = New System.Drawing.Size(36, 16)
+        Me.chkRRA3.TabIndex = 111
+        Me.chkRRA3.Text = "↓"
+        Me.chkRRA3.UseVisualStyleBackColor = True
         '
         'Label7
         '
@@ -1526,6 +1499,33 @@ Partial Class 職員連絡網改2
         Me.Label10.TabIndex = 115
         Me.Label10.Text = "↓"
         '
+        'dgvContactA3
+        '
+        Me.dgvContactA3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvContactA3.Location = New System.Drawing.Point(490, 276)
+        Me.dgvContactA3.Name = "dgvContactA3"
+        Me.dgvContactA3.RowTemplate.Height = 21
+        Me.dgvContactA3.Size = New System.Drawing.Size(123, 98)
+        Me.dgvContactA3.TabIndex = 98
+        '
+        'dgvContactA2
+        '
+        Me.dgvContactA2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvContactA2.Location = New System.Drawing.Point(490, 145)
+        Me.dgvContactA2.Name = "dgvContactA2"
+        Me.dgvContactA2.RowTemplate.Height = 21
+        Me.dgvContactA2.Size = New System.Drawing.Size(123, 98)
+        Me.dgvContactA2.TabIndex = 97
+        '
+        'dgvContactA1
+        '
+        Me.dgvContactA1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvContactA1.Location = New System.Drawing.Point(490, 14)
+        Me.dgvContactA1.Name = "dgvContactA1"
+        Me.dgvContactA1.RowTemplate.Height = 21
+        Me.dgvContactA1.Size = New System.Drawing.Size(123, 98)
+        Me.dgvContactA1.TabIndex = 96
+        '
         '職員連絡網改2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -1535,14 +1535,14 @@ Partial Class 職員連絡網改2
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.CheckBox9)
-        Me.Controls.Add(Me.CheckBox8)
-        Me.Controls.Add(Me.CheckBox7)
-        Me.Controls.Add(Me.CheckBox6)
-        Me.Controls.Add(Me.CheckBox5)
+        Me.Controls.Add(Me.chkRRA3)
+        Me.Controls.Add(Me.chkRightA3)
+        Me.Controls.Add(Me.chkDownA3)
+        Me.Controls.Add(Me.chkLeftA3)
+        Me.Controls.Add(Me.chkLLA3)
         Me.Controls.Add(Me.chkPrintDate)
         Me.Controls.Add(Me.printYmdBox)
-        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.dgvPanel)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.dgvContactA3)
         Me.Controls.Add(Me.dgvContactA2)
@@ -1560,13 +1560,8 @@ Partial Class 職員連絡網改2
         Me.Controls.Add(Me.Label1)
         Me.Name = "職員連絡網改2"
         Me.Text = "職員連絡網改2"
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        CType(Me.dgvStaff, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.dgvPanel.ResumeLayout(False)
+        Me.dgvPanel.PerformLayout()
         CType(Me.dgvContactF6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvContactB6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvContactF1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1597,6 +1592,11 @@ Partial Class 職員連絡網改2
         CType(Me.dgvContactD2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvContactD4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvContactD3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.dgvStaff, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvContactA3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvContactA2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvContactA1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1606,7 +1606,7 @@ Partial Class 職員連絡網改2
     End Sub
     Friend WithEvents chkPrintDate As System.Windows.Forms.CheckBox
     Friend WithEvents printYmdBox As ymdBox.ymdBox
-    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents dgvPanel As System.Windows.Forms.Panel
     Friend WithEvents dgvContactF6 As Contact.ExDataGridView
     Friend WithEvents dgvContactB6 As Contact.ExDataGridView
     Friend WithEvents dgvContactF1 As Contact.ExDataGridView
@@ -1658,76 +1658,76 @@ Partial Class 職員連絡網改2
     Friend WithEvents btnClearSelect As System.Windows.Forms.Button
     Friend WithEvents dgvStaff As System.Windows.Forms.DataGridView
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents CheckBox13 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox5 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox6 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox7 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox8 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox9 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox39 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox36 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox19 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox20 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox17 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox18 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox14 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox15 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox16 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox10 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox11 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox12 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox21 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox22 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox23 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox24 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox25 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox26 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox27 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox28 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox29 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox30 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox31 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox32 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox33 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox62 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox63 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox64 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox65 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox66 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox67 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox68 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox69 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox70 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox71 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox72 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox73 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox74 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox49 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox50 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox51 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox52 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox53 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox54 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox55 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox56 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox57 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox58 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox59 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox60 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox61 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox34 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox35 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox37 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox38 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox40 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox41 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox42 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox43 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox44 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox45 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox46 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox47 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox48 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownC1 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLLA3 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftA3 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownA3 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightA3 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRRA3 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftC1 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightC1 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightB1 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownB1 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftF1 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownF1 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftE1 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightE1 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownE1 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftD1 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightD1 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownD1 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightB2 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownB2 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftF2 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownF2 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftE2 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightE2 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownE2 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftD2 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftC2 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightD2 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightC2 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownD2 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownC2 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightB5 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownB5 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftF5 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownF5 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftE5 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightE5 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownE5 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftD5 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftC5 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightD5 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightC5 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownD5 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownC5 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightB4 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownB4 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftF4 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownF4 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftE4 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightE4 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownE4 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftD4 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftC4 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightD4 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightC4 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownD4 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownC4 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightB3 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownB3 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftF3 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownF3 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftE3 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightE3 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownE3 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftD3 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkLeftC3 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightD3 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkRightC3 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownD3 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkDownC3 As System.Windows.Forms.CheckBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
