@@ -523,7 +523,7 @@ Public Class 職員連絡網改2
                     rs.Fields("Left").Value = If(chkLeftA3.Checked, 1, 0)
                     rs.Fields("Down").Value = If(chkDownA3.Checked, 1, 0)
                     rs.Fields("Right").Value = If(chkRightA3.Checked, 1, 0)
-                    rs.Fields("RR").Value = If(chkLLA3.Checked, 1, 0)
+                    rs.Fields("RR").Value = If(chkRRA3.Checked, 1, 0)
                 Else
                     '上記以外:左下、下、右下の矢印3個
                     'LL、RRの矢印はないので0
@@ -559,160 +559,172 @@ Public Class 職員連絡網改2
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     ''' <remarks></remarks>
-    'Private Sub btnPrint_Click(sender As System.Object, e As System.EventArgs) Handles btnPrint.Click
-    '    '対象のデータ
-    '    Dim target As String = If(rbtn1F.Checked, "1F", If(rbtn2I.Checked, "2I", "2R"))
+    Private Sub btnPrint_Click(sender As System.Object, e As System.EventArgs) Handles btnPrint.Click
+        '
+        Dim baseNumDic As New Dictionary(Of String, Integer) From {{"B", 0}, {"C", 3}, {"D", 6}, {"E", 9}, {"F", 12}}
 
-    '    '登録データ取得
-    '    Dim infoDic As New Dictionary(Of String, String(,))
-    '    Dim cnn As New ADODB.Connection
-    '    cnn.Open(TopForm.DB_Contact)
-    '    Dim rs As New ADODB.Recordset
-    '    Dim sql As String = "select Floor, Area, Nam, Tel1, Tel2, Syo from Contact where Floor = 'All' or Floor = '" & target & "' order by Area"
-    '    rs.Open(sql, cnn, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockReadOnly)
-    '    While Not rs.EOF
-    '        Dim area As String = Util.checkDBNullValue(rs.Fields("Area").Value)
-    '        Dim infoArray(3, 0) As String
-    '        infoArray(0, 0) = Util.checkDBNullValue(rs.Fields("Syo").Value)
-    '        infoArray(1, 0) = Util.checkDBNullValue(rs.Fields("Nam").Value)
-    '        infoArray(2, 0) = Util.checkDBNullValue(rs.Fields("Tel1").Value)
-    '        infoArray(3, 0) = Util.checkDBNullValue(rs.Fields("Tel2").Value)
-    '        infoDic.Add(area, infoArray.Clone())
-    '        rs.MoveNext()
-    '    End While
-    '    rs.Close()
-    '    cnn.Close()
+        '対象のデータ
+        Dim target As String = If(rbtn1F.Checked, "1F", If(rbtn2I.Checked, "2I", "2R"))
 
-    '    'エクセル
-    '    Dim objExcel As Excel.Application = CreateObject("Excel.Application")
-    '    Dim objWorkBooks As Excel.Workbooks = objExcel.Workbooks
-    '    Dim objWorkBook As Excel.Workbook = objWorkBooks.Open(TopForm.excelFilePass)
-    '    Dim oSheet As Excel.Worksheet = objWorkBook.Worksheets("緊急連絡網" & target)
-    '    objExcel.Calculation = Excel.XlCalculation.xlCalculationManual
-    '    objExcel.ScreenUpdating = False
+        '登録データ取得
+        Dim infoDic As New Dictionary(Of String, String(,))
+        Dim arrowData(5, 14) As Integer
+        Dim cnn As New ADODB.Connection
+        cnn.Open(TopForm.DB_Contact)
+        Dim rs As New ADODB.Recordset
+        Dim sql As String = "select Floor, Area, Nam, Tel1, Tel2, Syo, LL, Left, Down, Right, RR from Contact where Floor = 'All' or Floor = '" & target & "' order by Area"
+        rs.Open(sql, cnn, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockReadOnly)
+        While Not rs.EOF
+            Dim area As String = Util.checkDBNullValue(rs.Fields("Area").Value)
+            Dim infoArray(3, 0) As String
+            infoArray(0, 0) = Util.checkDBNullValue(rs.Fields("Syo").Value)
+            infoArray(1, 0) = Util.checkDBNullValue(rs.Fields("Nam").Value)
+            infoArray(2, 0) = Util.checkDBNullValue(rs.Fields("Tel1").Value)
+            infoArray(3, 0) = Util.checkDBNullValue(rs.Fields("Tel2").Value)
+            infoDic.Add(area, infoArray.Clone())
+            Dim initial As String = area.Substring(0, 1)
+            Dim num As String = area.Substring(1, 1)
+            If initial = "A" Then
+                If num = "3" Then
+                    arrowData(0, 1) = rs.Fields("LL").Value
+                    arrowData(0, 4) = rs.Fields("Left").Value
+                    arrowData(0, 7) = rs.Fields("Down").Value
+                    arrowData(0, 10) = rs.Fields("Right").Value
+                    arrowData(0, 13) = rs.Fields("RR").Value
+                End If
+            Else
+                If num <> "6" Then
+                    arrowData(num, baseNumDic(initial) + 1) = rs.Fields("Down").Value
+                    If initial <> "B" Then
+                        arrowData(num, baseNumDic(initial)) = rs.Fields("Left").Value
+                    End If
+                    If initial <> "F" Then
+                        arrowData(num, baseNumDic(initial) + 2) = rs.Fields("Right").Value
+                    End If
+                End If
+            End If
+            rs.MoveNext()
+        End While
+        rs.Close()
+        cnn.Close()
 
-    '    '日付
-    '    If chkPrintDate.Checked Then
-    '        Dim printYmd As String = printYmdBox.getADStr()
-    '        oSheet.Range("B4").Value = printYmd & " 現在"
-    '    End If
+        'エクセル
+        Dim objExcel As Excel.Application = CreateObject("Excel.Application")
+        Dim objWorkBooks As Excel.Workbooks = objExcel.Workbooks
+        Dim objWorkBook As Excel.Workbook = objWorkBooks.Open(TopForm.excelFilePass)
+        Dim oSheet As Excel.Worksheet = objWorkBook.Worksheets("緊急連絡網改")
+        objExcel.Calculation = Excel.XlCalculation.xlCalculationManual
+        objExcel.ScreenUpdating = False
 
-    '    'データ書き込み
-    '    If target = "1F" Then
-    '        '1F ver
-    '        '1番上
-    '        oSheet.Range("O6", "S9").Value = infoDic("A1")
-    '        '2番目
-    '        oSheet.Range("O12", "S15").Value = infoDic("A2")
-    '        '3番目
-    '        oSheet.Range("O18", "S21").Value = infoDic("A3")
-    '        '1列目
-    '        For i As Integer = 0 To 4
-    '            oSheet.Range("C" & (24 + i * 5), "G" & (27 + i * 5)).Value = infoDic("B" & (i + 1))
-    '        Next
-    '        '2列目
-    '        For i As Integer = 0 To 4
-    '            oSheet.Range("I" & (24 + i * 5), "M" & (27 + i * 5)).Value = infoDic("C" & (i + 1))
-    '        Next
-    '        '3列目
-    '        For i As Integer = 0 To 4
-    '            oSheet.Range("O" & (24 + i * 5), "S" & (27 + i * 5)).Value = infoDic("D" & (i + 1))
-    '        Next
-    '        '4列目
-    '        For i As Integer = 0 To 4
-    '            oSheet.Range("U" & (24 + i * 5), "Y" & (27 + i * 5)).Value = infoDic("E" & (i + 1))
-    '        Next
-    '        '5列目
-    '        For i As Integer = 0 To 4
-    '            oSheet.Range("AA" & (24 + i * 5), "AE" & (27 + i * 5)).Value = infoDic("F" & (i + 1))
-    '        Next
+        '日付
+        If chkPrintDate.Checked Then
+            Dim printYmd As String = printYmdBox.getADStr()
+            oSheet.Range("B4").Value = printYmd & " 現在"
+        End If
 
-    '        '最下段の表示、非表示
-    '        If oSheet.Range("C45").Value = "" AndAlso oSheet.Range("I45").Value = "" AndAlso oSheet.Range("O45").Value = "" AndAlso oSheet.Range("U45").Value = "" AndAlso oSheet.Range("AA45").Value = "" Then
-    '            oSheet.Rows(44).hidden = True
-    '            oSheet.Rows(45).hidden = True
-    '            oSheet.Rows(46).hidden = True
-    '            oSheet.Rows(47).hidden = True
-    '        End If
-    '    ElseIf target = "2I" Then
-    '        '2I ver
-    '        '1番上
-    '        oSheet.Range("L6", "P9").Value = infoDic("A1")
-    '        '2番目
-    '        oSheet.Range("L12", "P15").Value = infoDic("A2")
-    '        '3番目
-    '        oSheet.Range("L18", "P21").Value = infoDic("A3")
-    '        '1列目
-    '        For i As Integer = 0 To 5
-    '            oSheet.Range("C" & (24 + i * 5), "G" & (27 + i * 5)).Value = infoDic("B" & (i + 1))
-    '        Next
-    '        '2列目
-    '        For i As Integer = 1 To 5
-    '            oSheet.Range("I" & (24 + i * 5), "M" & (27 + i * 5)).Value = infoDic("C" & (i + 1))
-    '        Next
-    '        '3列目
-    '        For i As Integer = 0 To 5
-    '            oSheet.Range("O" & (24 + i * 5), "S" & (27 + i * 5)).Value = infoDic("D" & (i + 1))
-    '        Next
-    '        '4列目
-    '        For i As Integer = 1 To 5
-    '            oSheet.Range("U" & (24 + i * 5), "Y" & (27 + i * 5)).Value = infoDic("E" & (i + 1))
-    '        Next
-    '    ElseIf target = "2R" Then
-    '        '2R ver
-    '        '1番上
-    '        oSheet.Range("L6", "P9").Value = infoDic("A1")
-    '        '2番目
-    '        oSheet.Range("L12", "P15").Value = infoDic("A2")
-    '        '3番目
-    '        oSheet.Range("L18", "P21").Value = infoDic("A3")
-    '        '1列目
-    '        For i As Integer = 1 To 5
-    '            oSheet.Range("C" & (24 + i * 5), "G" & (27 + i * 5)).Value = infoDic("B" & (i + 1))
-    '        Next
-    '        '2列目
-    '        For i As Integer = 0 To 5
-    '            oSheet.Range("I" & (24 + i * 5), "M" & (27 + i * 5)).Value = infoDic("C" & (i + 1))
-    '        Next
-    '        '3列目
-    '        For i As Integer = 0 To 5
-    '            oSheet.Range("O" & (24 + i * 5), "S" & (27 + i * 5)).Value = infoDic("D" & (i + 1))
-    '        Next
-    '        '4列目
-    '        For i As Integer = 1 To 5
-    '            oSheet.Range("U" & (24 + i * 5), "Y" & (27 + i * 5)).Value = infoDic("E" & (i + 1))
-    '        Next
-    '        '最下段の表示、非表示
-    '        If oSheet.Range("C50").Value = "" AndAlso oSheet.Range("I50").Value = "" AndAlso oSheet.Range("O50").Value = "" AndAlso oSheet.Range("U50").Value = "" Then
-    '            oSheet.Rows(49).hidden = True
-    '            oSheet.Rows(50).hidden = True
-    '            oSheet.Rows(51).hidden = True
-    '            oSheet.Rows(52).hidden = True
-    '        End If
-    '    End If
+        'データ書き込み
+        '1番上
+        oSheet.Range("O6", "S9").Value = infoDic("A1")
+        '2番目
+        oSheet.Range("O12", "S15").Value = infoDic("A2")
+        '3番目
+        oSheet.Range("O18", "S21").Value = infoDic("A3")
+        '1列目
+        For i As Integer = 0 To 5
+            oSheet.Range("C" & (24 + i * 5), "G" & (27 + i * 5)).Value = infoDic("B" & (i + 1))
+        Next
+        '2列目
+        For i As Integer = 0 To 5
+            oSheet.Range("I" & (24 + i * 5), "M" & (27 + i * 5)).Value = infoDic("C" & (i + 1))
+        Next
+        '3列目
+        For i As Integer = 0 To 5
+            oSheet.Range("O" & (24 + i * 5), "S" & (27 + i * 5)).Value = infoDic("D" & (i + 1))
+        Next
+        '4列目
+        For i As Integer = 0 To 5
+            oSheet.Range("U" & (24 + i * 5), "Y" & (27 + i * 5)).Value = infoDic("E" & (i + 1))
+        Next
+        '5列目
+        For i As Integer = 0 To 5
+            oSheet.Range("AA" & (24 + i * 5), "AE" & (27 + i * 5)).Value = infoDic("F" & (i + 1))
+        Next
 
-    '    objExcel.Calculation = Excel.XlCalculation.xlCalculationAutomatic
-    '    objExcel.ScreenUpdating = True
+        '矢印の表示、非表示設定
+        '3段目からの矢印
+        Dim a3LL As Integer = arrowData(0, 1)
+        Dim a3Left As Integer = arrowData(0, 4)
+        Dim a3Down As Integer = arrowData(0, 7)
+        Dim a3Right As Integer = arrowData(0, 10)
+        Dim a3RR As Integer = arrowData(0, 13)
+        oSheet.Shapes.Item("A3LL").Visible = If(a3LL = 0, Microsoft.Office.Core.MsoTriState.msoFalse, Microsoft.Office.Core.MsoTriState.msoTrue)
+        oSheet.Shapes.Item("A3Left").Visible = If(a3Left = 0, Microsoft.Office.Core.MsoTriState.msoFalse, Microsoft.Office.Core.MsoTriState.msoTrue)
+        oSheet.Shapes.Item("A3Down").Visible = If(a3Down = 0, Microsoft.Office.Core.MsoTriState.msoFalse, Microsoft.Office.Core.MsoTriState.msoTrue)
+        oSheet.Shapes.Item("A3Right").Visible = If(a3Right = 0, Microsoft.Office.Core.MsoTriState.msoFalse, Microsoft.Office.Core.MsoTriState.msoTrue)
+        oSheet.Shapes.Item("A3RR").Visible = If(a3RR = 0, Microsoft.Office.Core.MsoTriState.msoFalse, Microsoft.Office.Core.MsoTriState.msoTrue)
+        '3段目の横直線
+        '左側2本
+        If a3LL = 1 Then
+            oSheet.Shapes.Item("LLToLeft").Visible = Microsoft.Office.Core.MsoTriState.msoTrue
+            oSheet.Shapes.Item("LeftToDown").Visible = Microsoft.Office.Core.MsoTriState.msoTrue
+        Else
+            oSheet.Shapes.Item("LLToLeft").Visible = Microsoft.Office.Core.MsoTriState.msoFalse
+            If a3Left = 1 Then
+                oSheet.Shapes.Item("LeftToDown").Visible = Microsoft.Office.Core.MsoTriState.msoTrue
+            Else
+                oSheet.Shapes.Item("LeftToDown").Visible = Microsoft.Office.Core.MsoTriState.msoFalse
+            End If
+        End If
+        '右側2本
+        If a3RR = 1 Then
+            oSheet.Shapes.Item("DownToRight").Visible = Microsoft.Office.Core.MsoTriState.msoTrue
+            oSheet.Shapes.Item("RightToRR").Visible = Microsoft.Office.Core.MsoTriState.msoTrue
+        Else
+            oSheet.Shapes.Item("RightToRR").Visible = Microsoft.Office.Core.MsoTriState.msoFalse
+            If a3Right = 1 Then
+                oSheet.Shapes.Item("DownToRight").Visible = Microsoft.Office.Core.MsoTriState.msoTrue
+            Else
+                oSheet.Shapes.Item("DownToRight").Visible = Microsoft.Office.Core.MsoTriState.msoFalse
+            End If
+        End If
+        '4段目以降の左下、下、右下矢印
+        For Each inital As String In {"B", "C", "D", "E", "F"}
+            For i As Integer = 1 To 5
+                '下矢印
+                oSheet.Shapes.Item(inital & i & "Down").Visible = If(arrowData(i, baseNumDic(inital) + 1) = 0, Microsoft.Office.Core.MsoTriState.msoFalse, Microsoft.Office.Core.MsoTriState.msoTrue)
+                If inital <> "B" Then
+                    '左下矢印
+                    oSheet.Shapes.Item(inital & i & "Left").Visible = If(arrowData(i, baseNumDic(inital)) = 0, Microsoft.Office.Core.MsoTriState.msoFalse, Microsoft.Office.Core.MsoTriState.msoTrue)
+                End If
+                If inital <> "F" Then
+                    '右下矢印
+                    oSheet.Shapes.Item(inital & i & "Right").Visible = If(arrowData(i, baseNumDic(inital) + 2) = 0, Microsoft.Office.Core.MsoTriState.msoFalse, Microsoft.Office.Core.MsoTriState.msoTrue)
+                End If
+            Next
+        Next
 
-    '    '変更保存確認ダイアログ非表示
-    '    objExcel.DisplayAlerts = False
+        objExcel.Calculation = Excel.XlCalculation.xlCalculationAutomatic
+        objExcel.ScreenUpdating = True
 
-    '    '印刷
-    '    If rbtnPrintout.Checked = True Then
-    '        oSheet.PrintOut()
-    '    ElseIf rbtnPreview.Checked = True Then
-    '        objExcel.Visible = True
-    '        oSheet.PrintPreview(1)
-    '    End If
+        '変更保存確認ダイアログ非表示
+        objExcel.DisplayAlerts = False
 
-    '    ' EXCEL解放
-    '    objExcel.Quit()
-    '    Marshal.ReleaseComObject(objWorkBook)
-    '    Marshal.ReleaseComObject(objExcel)
-    '    oSheet = Nothing
-    '    objWorkBook = Nothing
-    '    objExcel = Nothing
-    'End Sub
+        '印刷
+        If rbtnPrintout.Checked = True Then
+            oSheet.PrintOut()
+        ElseIf rbtnPreview.Checked = True Then
+            objExcel.Visible = True
+            oSheet.PrintPreview(1)
+        End If
+
+        ' EXCEL解放
+        objExcel.Quit()
+        Marshal.ReleaseComObject(objWorkBook)
+        Marshal.ReleaseComObject(objExcel)
+        oSheet = Nothing
+        objWorkBook = Nothing
+        objExcel = Nothing
+    End Sub
 
     ''' <summary>
     ''' 印刷日チェック
